@@ -1,9 +1,10 @@
 # Golang
 
 - [Tour of Go](https://go.dev/tour/)
+- [How to write Go code](https://go.dev/doc/code)
 - [Go by example](https://gobyexample.com)
-- [Effective Go](https://go.dev/doc/effective_go) - writing idiomatic go code
 - [Go language spec](https://go.dev/ref/spec)
+- [Effective Go](https://go.dev/doc/effective_go) - writing idiomatic go code
 - Cheatsheets: [devhints](https://devhints.io/go), [golang-cheat-sheet](https://github.com/a8m/golang-cheat-sheet)
 
 
