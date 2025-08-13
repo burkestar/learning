@@ -3,7 +3,9 @@
 - [Tour of Go](https://go.dev/tour/)
 - [Go by example](https://gobyexample.com)
 - [Effective Go](https://go.dev/doc/effective_go) - writing idiomatic go code
-- [Go language spec](https://go.dev/ref/spec) - language specification
+- [Go language spec](https://go.dev/ref/spec)
+- Cheatsheets: [devhints](https://devhints.io/go), [golang-cheat-sheet](https://github.com/a8m/golang-cheat-sheet)
+
 
 ## Books
 
