@@ -24,5 +24,14 @@ Author: Zoe Schlanger
 
 ## Chapter 6 - The (Plant) Body Keeps the Score
 
-- 
+## Chapter 7 - Conversations with Animals
 
+- Plants not only have means to communicate with other plants, but also with animals
+- Starving bees bite the leaves to induce flowers to bloom sooner so nectar energy becomes available to them
+- Monkey flower deceives bumblebees to transplant their pollen for reproduction by releasing a volatile compound that tricks them into thinking there is an abundance of pollen
+- Bittersweet nightshade secrete sugary nectar to attract ants who carry off the larvae of the flea beetle which protects the plant from attack when they mature
+- Orchids deceive male wasps to copulate not by visual means to look like the female wasp but using pheromone semiochemicals to attract them, mate and transport their pollen
+- Asters and goldenrods with their contrasting yellow and purple flowers attract more pollinators when situated together
+- Silver birch absorbs scent from nearby Labrador tea plants (type of rhododendron) so a compound sticks to its own leaves and protects against weevil attack
+- Plant signaling in the presence of ozone and air pollution is markedly decreased
+- Corn grown hybrid and in monoculture lack the same signaling and defense mechanisms to ward off pests, resulting in dependence on pesticides
