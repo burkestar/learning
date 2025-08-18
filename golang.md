@@ -27,7 +27,13 @@
 ## Tools
 
 - VS Code with Go extension (official from golang)
+
+
+## Links
+
 - [Awesome Go](https://github.com/avelino/awesome-go) compilation of tools and libraries by category
+- [Go interview practice](https://github.com/RezaSi/go-interview-practice)
+
 
 ## Notes
 
