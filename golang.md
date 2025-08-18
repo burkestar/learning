@@ -31,7 +31,7 @@
 
 ## Notes
 
-Design goals:
+### Design goals
 
 - Simplicity
 - Efficiency
@@ -39,7 +39,7 @@ Design goals:
 - Minimal standard lib
 - Backwards compatible (stable language without breaking changes)
 
-Language features:
+### Language features
 
 - Strong, static, structural typing
 - Compiled
@@ -49,7 +49,7 @@ Language features:
 - Error codes instead of exception handling
 - Generics were introduced using parametric polymorphism with type parameters
 
-Commands:
+### Commands
 
 - `go fmt` for formatting code
 - `go vet` for static code analysis to detect potential errors
@@ -60,14 +60,63 @@ Commands:
 - `go run` for building and executing code (shortcut)
 - `go install` for building and installing go modules
 
-Structure:
+### Structure
 
 - **Packages** are a collection of Go source files in the same directory with the same package name, as a way to organize related code into reusable units for modularity and to prevent naming conflicts.
 - **Modules** are a collection of one or more Go Packages with a `go.mod` at its root, enabling versioning, dependency management, consistent builds and reproducible environments.  `go.mod` defines the module path used for importing, and dependency requirements.
 - Modules produce either a library (importable module) or an executable.
-- `main` package is special and implements `main` function as entrypoint to executable
 
-Build:
+Layout and Naming Conventions:
+
+- `main` package is special and implements `main` function as entrypoint to executable
+- Go ignores directories and files starting with `.` or `_`.
+- Do not use `src/` folder, its discouraged.
+- Package names are lowercase with no under_scores or mixedCase.
+- Uppercase identifiers are exported (public) outside the package, whereas lowercase identifiers are private.
+- Use camelCase for multi-word identifiers
+
+Common layout:
+
+```text
+api/                            - API spec definitions (OpenAPI, JSON schema, protocol definitions)
+assets/                         - Miscellaneous assets for the project (images, logos, etc.)
+build/                          - 
+    package/                    - cloud (AMI), container (Docker), or OS (rpm, deb) package configuration and scripts
+    ci/                         - Continuous Integration configuration scripts
+cmd/                            - main application entrypoints. Minimal amount of code. Mostly use code from /internal and /pkg.
+    foo/                        - directory name should match the name of the executable you want, in this case "foo" command line tool
+        main.go                 - command line tool
+    server/
+        main.go                 - webserver
+configs/                        - configuration for different environments
+deploy/                         - Configurations and templates for deployment to IaaS/PaaS and container orchestration platforms. Docker-compose, Helm, Terraform, etc.
+docs/                           - project documentation
+init/                           - system init (systemd) and process manager (supervisord) configs 
+internal/                       - private code used by the package not intended to be imported by external projects. Go compiler enforces it. Internal packages can be nested at any level.
+    something/
+        something.go            - some internal code
+        something_test.go       - unit tests for something.go        
+pkg/                            - public, reusable code meant to be imported by external projects, shared libraries and components with general purpose functionality
+scripts/                        - scripts for building, deploying, testing and maintaining the project. Often referenced by root-level Makefile to keep simple and minimal.
+tests/                          - unit and integration tests for the project
+    testdata/                   - Data for tests, ignored by Go toolchain
+vendor/                         - application dependencies
+web/                            - contains web assets (html, css, javascript)
+LICENSE                         - project license file
+README.md                       - readme to describe the project and provide important links (to docs for how to install and get started)
+go.mod                          - defines the Go module and its package dependencies
+go.sum                          - cryptographic hash of project and dependencies to provide reproducible builds and verify integrity of third party software packages
+```
+
+See [project-layout](https://github.com/golang-standards/project-layout) but note its not official.
+
+
+### Code conventions
+
+- Error codes returned by functions `value, err := function()`
+
+
+### Build
 
 - `go build` outputs binary to current directory. Used for creating standalone executable for deployment or local testing. Can be used for cross-compiling to different architectures.
 - `go install` outputs compiled binaries to `$GOBIN` or `$GOPATH/bin` (usually `$HOME/go/bin`)
@@ -75,7 +124,7 @@ Build:
 - `go build` uses a **build cache** to store output and speed up subsequent builds - usually in user cache directory `~/.cache/go-build` (override with `$GOCACHE`)
 - **module cache** contains source code, **build cache** contains compiled binaries
 
-Environment variables:
+### Environment variables
 
 - `$GOPATH` for Go workspace where it can find source code, compiled packages and installed binaries.
 - `$GOROOT` for location to Go toolchain and standard library
@@ -86,10 +135,3 @@ Environment variables:
 - `$GOMODCACHE` for path to module cache
 - `$GOGC` for tuning garbage collector
 - Use `go env` to look up the value for these settings
-
-Conventions
-
-- Package names are lowercase with no under_scores or mixedCase.
-- Uppercase identifiers are exported (public) outside the package, whereas lowercase identifiers are private.
-- Use camelCase for multi-word identifiers
-- Error codes returned by functions `value, err := function()`
