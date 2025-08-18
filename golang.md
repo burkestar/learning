@@ -87,3 +87,9 @@ Environment variables:
 - `$GOGC` for tuning garbage collector
 - Use `go env` to look up the value for these settings
 
+Conventions
+
+- Package names are lowercase with no under_scores or mixedCase.
+- Uppercase identifiers are exported (public) outside the package, whereas lowercase identifiers are private.
+- Use camelCase for multi-word identifiers
+- Error codes returned by functions `value, err := function()`
