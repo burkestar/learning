@@ -2,6 +2,13 @@
 
 This repository contains notes from books and articles I've read.
 
+## Tech
+
+### Programming Languages
+
+- [Golang](golang.md)
+
+
 ## Books
 
 ### 2025
@@ -137,10 +144,3 @@ This repository contains notes from books and articles I've read.
 - The Checklist Manifesto
 - The World is Flat
 - Animal Farm
-
-
-## Languages
-
-- [Golang](golang.md)
-
-
