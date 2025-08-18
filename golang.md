@@ -74,6 +74,8 @@ Layout and Naming Conventions:
 - Package names are lowercase with no under_scores or mixedCase.
 - Uppercase identifiers are exported (public) outside the package, whereas lowercase identifiers are private.
 - Use camelCase for multi-word identifiers
+- Design principles: maintainability, encapsulation, separation of concerns, testability, stability of public interfaces
+
 
 Common layout:
 
