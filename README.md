@@ -7,7 +7,8 @@ This repository contains notes from books and articles I've read.
 ### Programming Languages
 
 - [Golang](tech/golang.md)
-
+- [Javascript](tech/javascript.md)
+- [Python](tech/python.md)
 
 ## Books
 
