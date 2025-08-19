@@ -186,3 +186,4 @@ Misc:
 - [uuid](https://github.com/google/uuid)
 - [grpc-go](https://github.com/grpc/grpc-go) for gRPC
 - [buf](https://github.com/bufbuild/buf) for protobuf
+- [air](https://github.com/air-verse/air) for live reload to watch files and trigger a rebuild
