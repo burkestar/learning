@@ -8,7 +8,7 @@
     - [Effective Go](https://go.dev/doc/effective_go) - writing idiomatic go code
 - [Go by example](https://gobyexample.com)
 - Cheatsheets: [devhints](https://devhints.io/go), [golang-cheat-sheet](https://github.com/a8m/golang-cheat-sheet)
-
+- [Go interview practice](https://github.com/RezaSi/go-interview-practice)
 
 ## Books
 
@@ -23,17 +23,6 @@
 - [Rob Pike on what we got right and what we got wrong](https://www.youtube.com/watch?v=yE5Tpp2BSGw)
 - [Rob Pike on Simplicity is Complicated](https://www.youtube.com/watch?v=rFejpH_tAHM)
 - [Rob Pike on Concurrency is Not Parallelism](https://www.youtube.com/watch?v=oV9rvDllKEg)
-
-## Tools
-
-- VS Code with Go extension (official from golang)
-
-
-## Links
-
-- [Awesome Go](https://github.com/avelino/awesome-go) compilation of tools and libraries by category
-- [Go interview practice](https://github.com/RezaSi/go-interview-practice)
-
 
 ## Notes
 
@@ -82,7 +71,6 @@ Layout and Naming Conventions:
 - Use camelCase for multi-word identifiers
 - Design principles: maintainability, encapsulation, separation of concerns, testability, stability of public interfaces
 
-
 Common layout:
 
 ```text
@@ -118,11 +106,9 @@ go.sum                          - cryptographic hash of project and dependencies
 
 See [project-layout](https://github.com/golang-standards/project-layout) but note its not official.
 
-
 ### Code conventions
 
 - Error codes returned by functions `value, err := function()`
-
 
 ### Build
 
@@ -143,3 +129,22 @@ See [project-layout](https://github.com/golang-standards/project-layout) but not
 - `$GOMODCACHE` for path to module cache
 - `$GOGC` for tuning garbage collector
 - Use `go env` to look up the value for these settings
+
+### Tools and Frameworks
+
+- [Awesome Go](https://github.com/avelino/awesome-go) compilation of tools and libraries by category
+
+Editor:
+
+- VS Code or Cursor with Go extension (official from golang)
+- GoLand from Jetbrains
+
+Web:
+
+- [Gin](https://gin-gonic.com) - Web framework that is fast, with zero-allocation router, middleware support. Recommended for new projects in golang.
+- Chi - fast, recommended for new projects in golang
+- Fiber - extremely fast
+- Echo - fast, simple
+- Gorilla - advanced routing
+- FastHTTP - extremely fast, lower level
+- Beego - feature rich, full stack, includes caching and ORM support. Recommended if you want an opinionated full stack framework.
