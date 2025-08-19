@@ -141,10 +141,48 @@ Editor:
 
 Web:
 
+- [net/http](https://pkg.go.dev/net/http) stdlib is recommended by many experienced golang developers. Gives you more control and understanding of how everything is wired together. [Writing web applications](https://go.dev/doc/articles/wiki/) using net/http.
 - [Gin](https://gin-gonic.com) - Web framework that is fast, with zero-allocation router, middleware support. Recommended for new projects in golang.
-- Chi - fast, recommended for new projects in golang
-- Fiber - extremely fast
-- Echo - fast, simple
+- [Chi](https://github.com/go-chi/chi) - fast, lightweight, idiomatic, composable. Recommended for new projects in golang
+- [Fiber](https://gofiber.io) - extremely fast. Routing, middleware, JSON rendering, Template engine, Websockets, Rate limiting.
 - Gorilla - advanced routing
-- FastHTTP - extremely fast, lower level
 - Beego - feature rich, full stack, includes caching and ORM support. Recommended if you want an opinionated full stack framework.
+
+Database:
+
+- [pgx](https://github.com/jackc/pgx) - Postgresql driver that is low-level and high performance
+- [GORM](https://gorm.io/index.html) - model-first, full featured, multi-database support, migrations support, production ready. Most popular and recommended.
+- [bun](https://github.com/uptrace/bun) - SQL-first, type safe, multi-database support, migrations support, production ready. Fluent-style API for expressing SQL-like queries with Go code.
+- [sqlc](https://github.com/sqlc-dev/sqlc) - SQL-first. Write SQL, generate type-safe Golang code to use as your persistence layer.
+
+Logging:
+
+- [log/slog](https://pkg.go.dev/log/slog) stdlib for structured logging, added in go 1.21. Decent performance. Not fully zero allocation. Supports different logging library backends that implement Handler interface (zap, zerolog, etc.)
+- [zerolog](https://github.com/rs/zerolog) - extremely fast, very efficient (zero allocation), chainable API
+- [zap](https://github.com/uber-go/zap) - very fast, very efficient (zero allocation). More ergonomic "sugared" API or lower-level, more performant core API.
+
+Testing:
+
+- [Testify](https://github.com/stretchr/testify) for assertions and mocks
+- [GoConvey](https://smartystreets.github.io/goconvey/) for BDD-style tests with a web UI for results reporting, watch mode to rerun tests on save, IDE integration with notifications.
+
+CLI:
+
+- [Cobra](https://cobra.dev)
+
+Configuration:
+
+- [GoDotEnv](https://github.com/joho/godotenv)
+
+Auth:
+
+- [goth](https://github.com/markbates/goth) with OAuth 2 support for many providers. Client library for working with external Authorization Server.
+- [fosite](https://github.com/ory/fosite) security-first OAuth2 and OpenID Connect framework from Ory. Implementation for Authorization Server but also can be used for Resource Server in OAuth to validate tokens and bind to client identities.
+- [x/oauth2](https://pkg.go.dev/golang.org/x/oauth2) official, widely used. Client library for working with OAuth providers.
+
+Misc:
+
+- [errgroup](https://pkg.go.dev/golang.org/x/sync/errgroup) for working with groups of coroutines for tasks
+- [uuid](https://github.com/google/uuid)
+- [grpc-go](https://github.com/grpc/grpc-go) for gRPC
+- [buf](https://github.com/bufbuild/buf) for protobuf
