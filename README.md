@@ -6,7 +6,7 @@ This repository contains notes from books and articles I've read.
 
 ### Programming Languages
 
-- [Golang](golang.md)
+- [Golang](tech/golang.md)
 
 
 ## Books
@@ -27,11 +27,11 @@ This repository contains notes from books and articles I've read.
 
 ### 2020
 
-- The Effective Engineer
+- [The Effective Engineer](books/effective-engineer.md)
 
 ### 2019
 
-- One Minute Manager
+- [One Minute Manager](books/one-minute-manager.md)
 - Zen and the Art of Motorcycle Maintenance
 - Peopleware
 - Astrophysics for People in a Hurry
@@ -56,6 +56,7 @@ This repository contains notes from books and articles I've read.
 
 ### Past
 
+- [Writing Better Lyrics](books/writing-better-lyrics.md)
 - Knowledge Management
 - Crossing the Chasm
 - What Minds Can Do
