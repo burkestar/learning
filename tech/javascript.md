@@ -140,3 +140,12 @@ Misc:
 
 - Axios - promise-based HTTP client
 
+Editors:
+
+- VS Code with plugins
+    - Prettier
+    - ESLint
+    - ES6 code snippets
+    - ES7+ React/Redux/React-Native Snippets:
+- WebStorm by Jetbrains
+- [jsFiddle](https://jsfiddle.net) to edit HTML, CSS and Javascript in web editor
