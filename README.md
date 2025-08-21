@@ -14,30 +14,38 @@ This repository contains notes from books and articles I've read.
 
 ## Books
 
-### 2025
+### Technology, Software, Artificial Intelligence - nerdy stuff
 
-- [Light Eaters](books/light-eaters.md)
+- The DevOps Handbook
+- The Phoenix Project
+- The Goal
+- Release It!
+- Explore It!
+- Building Microservices
+- Rapid Development
+- Continuous Delivery
+- Working Effectively with Legacy Code
+- Software Project Survival Guide
+- Test-Driven Development
+- The Design of Everyday Things
+- How Google Tests Software
+- Visible Ops Handbook
+- Lessons Learned in Software Testing
+- How we test software at Microsoft
+- Hadoop Operations
+- Wired for War
+- Brave new War
+- The Mythical Man Month
+- Continuous Integration
+- Javascript Patterns
+- Javascript the Good Parts
+- Code Complete
+- AI Modern Approach (AIMA)
+- Intro to Algorithms
 
-### 2024
-
-### 2023
-
-
-### 2022
-
-### 2021
-
-
-### 2020
-
-- [The Effective Engineer](books/effective-engineer.md)
-
-### 2019
+### Leadership, Entrepreneurship, Innovation - inspiration for achieving things
 
 - [One Minute Manager](books/one-minute-manager.md)
-- Zen and the Art of Motorcycle Maintenance
-- Peopleware
-- Astrophysics for People in a Hurry
 - High Output Management
 - Managing Humans
 - Measure what Matters
@@ -46,81 +54,72 @@ This repository contains notes from books and articles I've read.
 - Radical Candor
 - The Manager's Path
 - 21 Indispensible Qualities of a Leader
-- Ender's Game
-- Old Man and the Sea
-- Jonathan Livingston Seagull
-- The DevOps Handbook
-
-### 2018
-
-- The Phoenix Project
-- The Goal
-
-
-### Past
-
-- [Writing Better Lyrics](books/writing-better-lyrics.md)
-- Knowledge Management
-- Crossing the Chasm
-- What Minds Can Do
 - Rework
-- Software Project Survival Guide
 - Corporate Entrepreneurship
-- Release It!
-- Explore It!
-- Building Microservices
-- The 4 Hour Body
-- Rapid Development
-- Continuous Delivery
-- Working Effectively with Legacy Code
-- Making Ideas Happen
-- On Intelligence
-- The Design of Everyday Things
-- Test-Driven Development
+- Peopleware
 - How Google Works
 - Strategic Management and Technological Innovation
 - Automate This
-- The Power of Now
-- How Google Tests Software
-- The 4 Hour Work Week
-- The Way of the Peaceful Warrior
-- iRobot
-- The War of Art
-- The Kite Runner
 - Freakonomics
 - Outliers
 - Tribes
-- Visible Ops Handbook
-- Lessons Learned in Software Testing
-- An Inconvenient Truth
 - Principles of Microeconomics
-- Hadoop Operations
 - Open Innovation
-- How we test software at Microsoft
 - IT Architecture Toolkit
-- Wired for War
-- Wikinomics
-- Brave new War
-- Richard Branson’s Losing my Virginity
-- One Second After
 - The E-Myth Revisited
-- Jim Cramer’s Real Money
-- No Meat Athlete
-- Rich Dad, Poor Dad
+- Wikinomics
+- Richard Branson’s Losing my Virginity
 - A Sense of Urgency
 - Blink
-- Lance Armstrong’s autobiography
-- The Mythical Man Month
 - Don’t Make me think!
 - Crush it!
-- Continuous Integration
-- 1984
-- Javascript Patterns
-- Javascript the Good Parts
 - Good to Great
-- Code Complete
-- AI Modern Approach (AIMA)
-- Intro to Algorithms
+- The Tipping Point
+- Start Something that Matters
+- The Checklist Manifesto
+- The World is Flat
+
+### Personal Development, Philosophy - being a better human
+
+- [The Effective Engineer](books/effective-engineer.md)
+- Zen and the Art of Motorcycle Maintenance
+- Knowledge Management
+- Crossing the Chasm
+- What Minds Can Do
+- The 4 Hour Body
+- Making Ideas Happen
+- On Intelligence
+- The Power of Now
+- The Way of the Peaceful Warrior
+- The 4 Hour Work Week
+- The War of Art
+- Rich Dad, Poor Dad
+- No Meat Athlete
+- Man’s Search for Meaning
+- The Millionaire Next Door
+- Think and Grow Rich
+- Five People you Meet in Heaven
+- The 7 Habits of Highly Effective People
+- The Richest Man in Babylon
+- The Alchemist
+- The Tao of Pooh
+- The Last Lecture
+- Tuesdays with Morrie
+
+### Science, Environment, Space - the world around us
+
+- [Light Eaters](books/light-eaters.md)
+- Astrophysics for People in a Hurry
+- An Inconvenient Truth
+
+### Classics and Popular Books - everyone should read
+
+- Ender's Game
+- Old Man and the Sea
+- Jonathan Livingston Seagull
+- iRobot
+- The Kite Runner
+- 1984
 - Hunger Games
 - Harry Potter (books 1-7)
 - The Giver
@@ -129,22 +128,15 @@ This repository contains notes from books and articles I've read.
 - Voyage of Doctor Dolittle
 - Catcher in the Rye
 - Of Mice and Men
-- Man’s Search for Meaning
 - The Book Thief
 - Fahrenheit 451
 - Slaughterhouse Five
 - Chronicles of Narnia
-- The Millionaire Next Door
-- Think and Grow Rich
-- Five People you Meet in Heaven
-- The 7 Habits of Highly Effective People
-- The Richest Man in Babylon
-- Start Something that Matters
-- The Last Lecture
-- Tuesdays with Morrie
-- The Alchemist
-- The Tipping Point
-- The Tao of Pooh
-- The Checklist Manifesto
-- The World is Flat
 - Animal Farm
+
+### Misc
+
+- [Writing Better Lyrics](books/writing-better-lyrics.md)
+- One Second After
+- Jim Cramer’s Real Money
+- Lance Armstrong’s autobiography
