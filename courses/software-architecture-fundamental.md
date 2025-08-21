@@ -1,0 +1,459 @@
+# Software Architecture Fundamentals
+
+https://learning.oreilly.com/videos/software-architecture-fundamentals
+
+Neil Ford, Mark Richards
+
+- **Expectations of an architect**
+    - Define architecture and design principles to guide technology decisions for the enterprise
+    - Analyze technology environment and recommend improvements
+    - Analyze technology and industry trends to keep current
+    - Ensure compliance with the architecture
+    - Have exposure to multiple and diverse technologies, platforms and environments
+    - Have certain level of business domain expertise
+    - Exceptional interpersonal skills including teamwork, facilitation, negotiation
+    - Understand the political landscape and be able to navigate
+- **Thinking like an architect**
+    - Technical depth (things you are an expert in) vs technical breadth (things you are aware of)
+    - Architecture vs design
+        - Architect
+            - identifying characteristics of software (-ilities)
+            - patterns
+            - core components of the architecture
+        - Designer (software developer)
+            - Creating new functionality within the architecture
+    - How to stay active in codebase as hands-on architect
+        - Experiments / technical spikes (off critical path)
+        - Pair with junior developers on implementation
+        - Code review
+    - Don’t be a bottleneck (creator of core frameworks) unless you are actively hands-on and can maintain them.
+        - Carving out framework code for yourself didn’t allow knowledge transfer to happen to other developers.
+        - Working on functionality gives exposure to business domain and feel the same pain as other developers in the workflow and codebase
+- **Identifying architecture characteristics**
+    - Examples of how to identify which “-ility” applies to a given scenario
+    - Don’t put the cart before the horse.  First understand the problem you’re trying to solve and from that derive requirements, but don’t assume that “requirements” given to you by stakeholders are true requirements.  You need to understand the context and what the true objective is.  Example is the F-16 fighter plane that couldn’t be designed to meet low weight and high speed requirements, but true need was for an aircraft that could escape combat so maneuverability and accelerate were the real requirements.
+- **Analyzing architecture tradeoffs**
+    - Example of a battleship that sank because the architect tried to solve everything without considering tradeoffs, so it was too top heavy and sank when the weapons were fired.
+    - ATAM (Architecture Tradeoff Analysis Method) - although it doesn’t necessarily work well
+        - Inputs: Proposed architecture, business drivers, quality attributes
+        - Output: Validated and approved architecture
+        - Create an architecture presentation
+        - Establish tradeoffs
+        - Identify and mitigate risks
+    - CBAM (Cost-Benefit Analysis Method)
+        - Business goals, balance costs and benefits
+- **Understanding layered architecture**
+    - “big ball of mud”
+    - layered architecture - well defined layers of responsibility, each layer contains components.
+        - Layers are “closed” so requests must go through layers (presentation → business → persistence → database).
+        - Provides separation of concerns.
+        - Layers of isolation that communicate through well defined interfaces.
+        - Leads to Architecture “sink hole anti-pattern” where closed layers may not provide value but are required.  Can “open” a layer (Business → Persistence, skipping Service) to avoid the problem, but its a tradeoff.  To change persistence layer is more difficult since there are more upstream dependencies, the layers which depend on (coupled to) its interfaces.
+    - pattern governance
+        - what exceptions should be allowed?  (e.g. reporting in presentation layer go directly to database layer?)
+    - layered architecture (aka modular monolith)
+        
+        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6bbac00d-dd37-4d66-a546-d5a8d8d272ad/Untitled.png)
+        
+- **Microkernel architecture (”plug in” architecture pattern).**
+    - Plug-in module around a core system.
+    - Examples: Eclipse IDE, web browser, claims processing with ruleset per state (e.g. Turbotax), checker tools like pylint
+    - Avoid inter-dependency between plugin components
+    - Registry adds some complexity for registering plugins
+    - Plug-in contracts
+    - Use an adapter pattern for a 3rd party plugin to conform to the plugin contract.
+- **Event-driven architecture**
+    - Event → event queue → event channel → event processor
+    - Challenge is how to coordinate asynchronous processes, which must happen at the “end” of the process.
+    - Mediator topology: event queue → event mediator —> event channel(s)
+        - Enterprise Service Bus provides this capability
+        - “Workflow” / process engine to coordinate the sequence for event flow
+    - CQRS (Command and Query Responsibility Segregation)
+        - reading and writing data to database have different flows
+        - query and update are separated, with background replication of data
+        - eventual consistency rather than transactional system
+    - Keeping track of things and reporting on things are different concerns.  Updates go into events queue, update system-of-record (CQRS) and also propagated to analytics database for reporting.
+    - Integration architects to manage the Mediator, and will become a bottleneck
+- **Pipeline Architecture**
+    - Pipe → filter → pipe
+        - self-contained and independent from other filters, designed to perform single specific task
+        - producers, consumers, transformer, tester
+    - Types of pipeline elements
+        - **Producer** → starting point, outbound only (its a source)
+        - Pipe → **Transformer** → pipe
+        - Pipe → **Tester** ?→ pipe (may have output or might discard output)
+        - Pipe → **Consumer** (no output, its a sink)
+    - Very modular
+    - Are pipeline and event-driven the same pattern?
+        - Pipeline
+            - Synchronous data filtering
+            - Always unidirectional
+            - Simple single purpose filters (processor)
+            - (Modular) Monolithic architecture
+        - Event-driven
+            - Asynchronous event processing
+            - Can be request/reply (bidirectional communications between components)
+            - Processors can be complex and serve multi-purpose
+            - Distributed architecture
+- **Space-based Architecture**
+    - Named after “tuple” space
+    - Avoids the database being the bottleneck
+    - Processing unit (contains application via virtualized middleware)
+        - Virtualized middleware
+            - Messaging grid
+            - Data grid
+            - Processing grid
+            - Deployment manager
+        - Processing unit may be monolithic or microservice
+        - Contains in-memory data grid holding transactional data for processing unit
+        - Data replication engine (purchased product)
+        
+        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ead1aaf7-c400-41f4-9b84-ca49a8769f9b/Untitled.png)
+        
+        - Data grid contains the data and maintains replication and eventual consistency.  Data updates are made asynchronously to the database which is used for recovery if all data grid units are unavailable.
+        - Integration hub (Apache Camel, Mule, Spring Integration) or Enterprise Service Bus (ESB) to manage orchestration
+        - Distributed caching - javaspaces, gigaspaces, ibm object grid, gemfire, ncache, oracle coherence
+    - Data collisions are possible
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3d64f3cd-04d5-41fa-a767-5ebe018ed0dc/Untitled.png)
+    
+    - Background processing to rectify data collisions
+    - Scalable and performant for elastic workloads - variable load and inconsistent peak times
+    - Not a good fit for traditional RDBMS (scale up)
+    - Complex and expensive to implement
+- **Microservices Architecture**
+    - 
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9fcc51a6-b220-4e49-90ca-6abf78260ff4/Untitled.png)
+    
+    - No middleware
+    - Each service has to be protocol-aware for which service its calling
+    - Disparate systems can interoperate (Point-to-point communication)
+    - Independent deployability
+    - Services may be functional or infrastructure
+    - API layer is not a mediator
+    - Bounded Context about business process, natural partitions within system, identify service boundaries
+    - Using common platform services (e.g. logging tool) require upgrades across all service teams with high coordination overhead
+    - Service Template on which to build a service has infra capabilities predefined (logging, monitoring).  Service template gets updated and all services built on it will pick up the update.  Aggressive failure so teams have to address it sooner rather than later.
+        - Tools: Drop wizard, Spring boot
+        - Plumbing code that is shared and reused across services (although it seems like you want to minimize how much you do this, duplication is favored over coupling)
+        - Every service needs AuthN+AuthZ so putting in Service Template can make it in-process rather than another network hop which increases latency.
+    - Avoid distributed transactions and rollbacks which are very difficult to get right.
+    - Service orchestration
+    - Multiple services sharing a data store assumes low rate of schema change, or NoSQL
+    - “backend for frontend” pattern to expose a consolidated API to frontend clients and hide the details at the service layer
+    - Integration hubs (ESB) may help pave over legacy services not yet microservices
+- **Service-oriented Architecture (SOA)**
+    - 
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4dc1421e-e559-42f0-900c-558b6b467c5f/Untitled.png)
+    
+    - Business Services and Enterprise Services (1-to-many relationship)
+    - Granularity of a service is variable, may be coarse-grained (a whole system that provides the service)
+    - Application Services - fine-grained, bound to context
+    - Infrastructure Services - auditing, logging, etc. used by Enterprise and Application Services.
+    - Service taxonomy (registry)
+    - Shared resources across the enterprise to provide a consistent view of data
+    - Protocol-agnostic heterogeneous interoperability
+    - Messaging middleware to transform requests between services
+    - Contract decoupling
+        - Use Integration Hub to abstract endpoints and protocols (in front of APIs for Enterprise Services and in front of APIs for Application/Infrastructure Services)
+    - Migrating to microservices is relatively straightforward since the Integration Hub maintains the contract so implementation of the service itself can easily change
+- **Service-based Architecture**
+    - Macroservices so only like ~10 services around bounded contexts and independently deployable.
+    - Group modules, identify seams, identify the bounded contexts
+    - Migrate non-volatile, low-usage areas of the platform first to microservices, to learn from it.  Its less risk, but you don’t get a lot of benefits from this (scalability, performance, etc.)
+    - Instead, split into macroservices.  Then later possibly break macroservices into microservices.
+- **Serverless Architectures**
+    - Backend-as-a-Service (BaaS)
+        - Extracting out simplified, reusable services of the application
+        - Need to worry about versioning (use versioned contracts)
+    - Function-as-a-Service (FaaS)
+    - When are they suitable? (some unclear point about the “Last 10% trap”)
+- **Understanding LMAX**
+    - Domain-specific architecture
+    - Financial trading platform, fast transaction speeds (goal: 6M transactions/sec on java thread)
+    - Business logic processor
+        - in-memory, only depends on JVM (high performance is keeping footprint of bytecode small, if stays in memory cache then never needs to swap)
+        - snapshots to do restarts
+        - multiple instances running, but only one result used!  each processor could grab multiple events to process
+    - Input disruptor
+        - circular queue / ring buffer, never let the garbage collector run (on JVM so no GC pauses)
+        - lots of slots for input (20M) and output (4M) buffer
+        
+        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/77707673-b588-4ca8-9ef7-971e924cb9d0/Untitled.png)
+        
+    - started with transactions but couldn’t achieve performance
+    - switched to actor-based concurrency, worse than transactions
+    - hypothesized and measured results (avoid GC pauses, what if fit in memory cache, etc.) to derive the architecture
+    - optimizes only for raw transactions speed, no other “-ilities” matter or need to be balanced! (except, don’t they also care about recoverability, cost efficiency, determinism of results, etc.?)
+- **Identifying and creating components**
+    - Identify a component and its responsibilities, inputs, outputs and dependencies on other components
+    - Role of architect is to specify the component responsibilities, and developer comes up with specific internal implementation (classes and design patterns)
+    - Identify coarse-grained functional areas → create coarse-grained microservices → map services to data tables (bottoms-up approach) → identify data overlaps and dependencies → refine services and data
+    - Assign requirements and user stories to components (e.g. check inventory → order placement service)
+    - Want to achieve low coupling and high cohesion
+    - Coupling
+        - Types
+            - Afferent (static) - degree to which other components are dependent on you (in-degree)
+            - Efferent (static) - degree to which you are dependent on other components (out-degree)
+            - Temporal coupling - components might not know about each other (no static dependency) but they might need to process in a specific order
+        - Levels
+            - Pathological coupling (highest) - relies on inner-workings of another
+            - External coupling - multiple components share an externally imposed protocol or data format (e.g. A must communicate with B using REST)
+            - Control coupling - one component passes information to another component on what to do
+            - Data coupling (lowest) - components bound to a shared data context
+    - Cohesion
+        - identifying components doing too much (responsibilities that don’t belong), and split them out to separate services
+- **Documenting architectures**
+    - Visual diagrams and architecture decisions (Decision Record)
+    - Tool recommendation: ipad, Apple pencil and dongle to projector.  Penultimate app.  OCR apps.  Makes it easier to digitize rather than whiteboarding.
+    - Motivation for documentation
+        - future developers to understand how it works
+        - documenting APIs for usage
+    - 4+1 architecture views (logical view, development view, physical view, process view - scenarios)
+    - c4
+        - System context
+        - Containers
+        - Components
+        - Classes
+    - Using a tool like Structurizr is a lot of work
+    - Folders
+        - current - useful enough to update (as things change)
+        - archaeology - interesting historical artifacts, but not active
+    - Rules for documentation
+        - Useful now
+        - As little as possible
+        - Always accurate
+        - Wait until APIs are solidified before documenting them
+        - Comprehensive diagrams - don’t try to capture entirety of system in one diagram, create dimensional views instead (e.g. used layers in Omnigraffle diagram editor to hide/show all the details in one view, since company in medical industry required to do this)
+    - Decisions
+        - Not all decisions made up front
+        - Architecture Decision Records
+        - Markdown-based text file
+        - Versioned sequentially or semantically (when superseded, update the semantic version)
+        - Template
+            - Title
+            - Context (why we need to make the decision now, considerations)
+            - Options considered
+            - Decision
+            - Status
+            - Consequences
+- **Presenting Software Architecture**
+    - (typical presentation recommendations, like avoid wall of text, don’t over-do transitions, etc.)
+    - Transitions that reveal detail can be useful.
+    - Avoid creating “slideument” that attempts to be self-documenting slides with lots of text.  Use slide notes instead.
+- **Architecture Katas**
+    - A way to practice architectural design within a small group.  A problem is presented and you walk through it.
+- **Structural Decay**
+    - What is architecture?
+        - Patterns, decisions, principals
+    - Measuring interactions between components
+    - Tools to identify structural decay
+        - Micro
+        - Macro
+- **Macro detection of structural decay**
+    - Symptoms
+        - Complex or error-prone deployments, high effort to deploy
+        - Hard for new people to learn code base
+        - Coding changes take longer than expected
+    - Indicators
+        - Static coupling
+        - Temporal coupling
+        - Component size
+        - Relevant to microservices
+            - Code dependencies (shared libraries) between services
+            - Too much inter-service communication
+            - Too many aggregation requests
+        - Database coupling
+        - Relevant to Microkernel architecture
+            - Dependencies between plug-ins
+            - High complexity in core system
+        - Relevant to tiered architecture
+            - Static, cross-domain dependencies
+            - Shared infrastructure components
+        - Relevant to Service-based architecture
+            - Inter-service communication (across seams)
+            - Temporal component coupling
+- **Micro detection of structural decay**
+    - Code metrics
+        - Cyclomatic complexity
+        - Number of classes per package
+        - Number of lines of code per package
+        - Percent inline comments (range: 8-20 - presenter likes ~4%)
+        - max complexity (1 + num_paths through method; range: 2-8)
+        - chidamber & kemerer metrics
+            - (DIT) depth of inheritance tree
+            - (WMC) weighted methods / class
+            - (CE) efferent coupling count
+            - (CA) afferent coupling count
+    - architecture characteristic mapping
+        - component size and coupling - impacts everything: modularity, maintainability, testability, availability, deployment, reliability, scalability, evolutionary)
+        - inheritance depth - impacts all except availability and scalability
+        - complexity - impacts maintainability, testability, reliability
+        - percent comments (poor code, or complex code) -  impacts maintainability, testability, reliability
+    - study the trends in code metrics, before taking action to address the cracks in the architecture.  Don’t be too reactive.
+- **Analysis tools**
+    - X-ray (Eclipse IDE plugin)
+        - 2d view of packages (width is # classes, height is # lines of code)
+        - radial map showing dependencies between packages
+    - Code City
+        - 3d “city street” view of packages, where height is # of classes
+        - Don’t analyze within a sprint/iteration, since it may have ephemeral spikes
+    - Source monitor
+        - Radial chart of metrics
+- **Architectural Continuous Delivery**
+    - Role of architect now encompasses continuous delivery and process changes
+    - Can’t treat operations separately
+    - “Use components to decouple parts of your application that change at different rates” (Continuous Delivery book)
+        - “Components are units of software that can be independently replaced and upgraded.”
+        - Libraries and services.
+            - Libraries run within single process, communicate through language function calls.
+            - Services run in separate processes, communicate with networking mechanisms (HTTP, TCP/IP)
+    - Not only Logical but also Physical separation into components
+    - Managing dependencies and the modern “DLL Hell” problem.
+        - Ubiquitous “lib” directory (tragedy of commons).  Things get moved in, but fear moving stuff around in case it might break something.
+        - Transitive dependency management tool
+    - Anti-patterns
+        - Cycles and circular dependencies
+            - Some IDEs that auto-import stuff reinforces the tangled imports
+            - Makes system hard to componentize
+            - Tools:
+                - JarAnalyzer to analyze relationships between Jars.  Dependency diagrams.
+                - Structure 101 for java to identify cycles in codebase and recommends refactorings.  NDepend is similar for .net.  JDepend for java.
+            - Identifying dependency cycles, linter to enforce dependency constraints
+            - Pipelining libraries
+        - Diamond dependencies
+            - component with parents using different versions of dependencies can’t be resolved in a valid way
+            - pipeline to trigger build/tests on levels of dependencies for compatibility
+    - Service-based architectures promote coupling from application to integration architecture.  In process calls now happen at network transport layer.
+        - Fallacies of distributed computing
+            - network is reliable
+            - latency is zero
+            - infinite bandwidth
+            - network is secure
+            - topology doesn’t change
+            - single administrator
+            - transport cost is zero
+            - network is homogeneous (same machine types)
+        - explicit about coupling
+        - engineering safety nets (contract tests between services).  Consumer-driven contracts.  Forces coarser-grained coupling and thinking about information passed around between services.
+        - Spider-web anti-pattern with lots of services and hard to tell which ones are used
+        - Need to be careful how you partition things along services
+    - Remote process responsiveness and server availability
+    - AuthN and AuthZ needs to be solved in distributed architecture.
+    - distributed logging to provide holistic view of transaction, correlation IDs, need to aggregate logs across services
+    - atomic transactions and transaction scope, avoid distributed transactions (indicates granularity of services may be incorrect)
+    - deployment pipelines
+    - summary
+        - architecture is abstract until operationalized
+        - expanding role of architect
+        - understanding shifting structure
+        - mature engineering practices
+        - manage coupling intelligently
+        - towards evolutionary architecture
+- **Enterprise Architecture**
+    - Business strategy and operating model → Business needs
+    - Business operations and IT systems/infrastructure → IT capabilities
+    - Enterprise Architecture is matching up business needs with IT capabilities
+        - Guiding architecture principles and standards
+        - business and IT capabilities models
+        - governance program
+        - EA strategy
+        - Enterprise Technical Strategy (don’t start here!)
+    - Strategy → Planning and Design → Execution
+    - Set goal, take stock of capabilities, identify the gaps, produce a plan to address the gaps
+    - Model-driven approach (”model first, ask questions later”)
+        - process
+            - what do we currently have? (capabilities)
+            - what do we want to do? (initiatives)
+            - how do we get there? (roadmaps)
+            - what is our progress? (communication)
+            - …feedback loop
+        - characteristics:
+            - completely documented view of enterprise
+            - allows for bottom-up and top-down initiatives
+            - modeling effort too long
+    - Initiative-driven approach (”on-demand modeling)
+        - process
+            - what do we want to do? (initiatives)
+            - what do we have? (capabilities)
+            - how do we get there? (roadmap)
+            - what is our progress? (communication)
+            - … no feedback loop
+        - characteristics
+            - faster than model-driven since only modeling what is needed, not everything
+            - initiatives are top-down from the business
+            - model reuse and synchronization is a challenge
+    - traditional approach
+        - current state → future state → migration plan
+        - too long to implement
+        - doesn’t address volatility in ever-changing landscape
+        - knowing how to get there is not always clear
+        - usually not enough details are provided to implement
+    - incremental approach
+        - current state → 1st iteration → … → final state
+        - more iterative, adjust to changing situation
+    - value-driven approach
+        - efforts scoped under business value and justification
+            - cost savings, better time to market, increased user satisfaction, more customers, strategic positioning
+    - adaptive approach
+        - ignore future state, focus on creating highly adaptive systems that can evolve as the business evolves
+        - consumer/supervisor pattern (handle unexpected increases in load)
+        - workflow event pattern (isolate/contain/repair errors)
+        - producer control flow pattern (backpressure to upstream systems)
+    - collaboration, team structure, break down silos
+        - autonomous teams
+        - inverse conway maneuver to shape teams around business product architecture
+        - decouple team dependencies
+    - governance
+        - monolithic / global governance across all teams results in over-engineering (since the tech stack must solve every teams hardest challenges)
+        - distributed governance
+            - microservice teams can choose their own tech stack (rightsize technology choice for problem to solve)
+        - goldilocks governance
+            - choose technology stacks appropriate to problem scale (let teams decide, but constrain their choices)
+            - avoids over-engineering problems from homogenous approach with global governance
+        - prefer guidance over governance
+            - avoid two teams building the same thing
+            - being able to monitor things effectively (put requirements on teams for cross-cutting concerns like logging, monitoring, etc.)
+    - compliance
+        - deployment pipelines can help with automating this
+        - zero-day exploit could cause the security test in the pipeline to fail, forcing teams to resolve it
+    - prefer automation to adhoc verification
+    - prefer evolution to prediction.  Rather than trying to predict future requirements, focus on making the architecture fast to adapt to new requirements.
+- **Evolutionary Architecture**
+    - Once architecture is built, how to prevent it degrading over time?
+    - How is long term planning possible when things change all the time?
+    - “Architecture are decisions that you wish you could get right early in a project” (and are difficult to change)
+    - What if we build architectures that are expected to change?
+    - Evolutionary architecture supports incremental, guided change across multiple dimensions
+    - Separate release from deployment (feature toggles)
+    - Define fitness function to evaluate candidate solutions and how well they achieve the aims
+        - Dimensions of fitness function
+            - atomic vs holistic
+            - triggered vs continuous
+        - atomic + triggered
+            - e.g. commit stage checkers and tests
+        - holistic + triggered
+            - run in a shared context so that tradeoffs satisfy all checkers
+        - atomic + continuous
+            - e.g., monitoring, logging
+            - synthetic transactions to test production systems (or timing SLA)
+            - correlation IDs
+        - continuous + holistic
+            - chaos monkey (e.g. Netflix survived AWS data center outage)
+    - Refactoring databases
+        - Supporting multiple versions of schema
+            - e.g. use trigger to keep synchronized (”expand and contract pattern”)
+- **Architecture Career Path**
+    - Certification
+        - Is it worth it?
+            - No monetary gain
+            - An ill-defined role
+            - Best benefit is a self-assessment (download the free packet)
+    - Study industry trends
+        - InfoQ - email digest
+        - Dzone
+        - Thoughtworks technology radar
+    - Additional videos on soft skills, people skills, service-based architectures
+-
