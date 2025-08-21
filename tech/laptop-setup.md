@@ -18,6 +18,9 @@ Design goals:
 - Accessories: extra power cable, USB C dongle with 2 HDMI outputs
 - 2 external monitors (same brand, Sceptre 27" curved)
 - Vivo dual monitor stand
+- Beats headphones
+- Yeti tumbler for water
+- Coffee or tea
 
 ## Software
 
