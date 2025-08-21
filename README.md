@@ -4,6 +4,8 @@ This repository contains notes from books and articles I've read.
 
 ## Tech
 
+- [Laptop setup](./tech/laptop-setup.md)
+
 ### Programming Languages
 
 - [Golang](tech/golang.md)
