@@ -85,6 +85,7 @@ Design goals:
 
 - Never store things on Desktop
 - Delete unused Applications
+- Downloads - either organize it somewhere long term (Documents or Projects folder, Google Drive) or delete it
 - Empty Trash every day
 
 
