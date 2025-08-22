@@ -81,6 +81,13 @@ Design goals:
 
 ### Tips
 
+**Keeping things tidy**
+
+- Never store things on Desktop
+- Delete unused Applications
+- Empty Trash every day
+
+
 **Customized prompt**
 
 ![prompt](./../assets/img/p10k_prompt.png)
