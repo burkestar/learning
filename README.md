@@ -5,6 +5,7 @@ This repository contains notes from books and articles I've read.
 ## Tech
 
 - [Laptop setup](./tech/laptop-setup.md)
+- [Tools I use](./tech/tools.md)
 
 ### Programming Languages
 
