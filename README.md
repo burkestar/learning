@@ -9,6 +9,7 @@ Curated notes and guides for rapidly learning various topics. The focus is on hi
 - [Laptop setup](topics/tech/laptop-setup.md)
 - [Tools I use](topics/tech/tools.md)
 - [Electronics](topics/tech/electronics.md)
+- [Kubernetes](topics/tech/kubernetes.md)
 
 #### Programming Languages
 
