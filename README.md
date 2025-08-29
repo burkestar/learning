@@ -10,6 +10,10 @@ Curated notes and guides for rapidly learning various topics. The focus is on hi
 - [Tools I use](topics/tech/tools.md)
 - [Electronics](topics/tech/electronics.md)
 - [Kubernetes](topics/tech/kubernetes.md)
+- [AWS](topics/tech/aws.md)
+    - [AWS VPC](topics/tech/aws-vpc.md)
+    - [AWS IAM](topics/tech/aws-iam.md)
+    - [AWS EKS](topics/tech/aws-eks.md)
 
 #### Programming Languages
 
