@@ -1,5 +1,9 @@
 ## One Minute Manager
 
+This is a very quick and easy read that you can finish in one sitting.
+
+It’s told as a fictional narrative about a new manager who is learning through observation and coaching from the wisdom of a highly respected business leader. He is amazed at how successful the company is and by talking to people within the organization, he realizes their success can be traced back to the effective practices practiced by the “one minute manager”.
+
 - One Minute Goal Setting
 	- Weekly review - review and analyze what was accomplished last week, problems they had, what still needs to be accomplished. Then develop plans and strategies for the next week.
 	- People who feel good about themselves produce good results - this is the key to getting more done
