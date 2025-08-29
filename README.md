@@ -15,6 +15,7 @@ Curated notes and guides for rapidly learning various topics. The focus is on hi
     - [AWS IAM](topics/tech/aws-iam.md)
     - [AWS EKS](topics/tech/aws-eks.md)
 - [Continuous Delivery](topics/tech/continuous-delivery.md)
+- [Engineering Productivity](topics/tech/engineering-productivity.md)
 
 #### Programming Languages
 
