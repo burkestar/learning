@@ -1,18 +1,20 @@
 # Learning
 
-This repository contains notes from books and articles I've read.
+Curated notes and guides for rapidly learning various topics. The focus is on highlighting core concepts and key resources rather than being an exhaustive roundup of all available links.
 
-## Tech
+## Topics
 
-- [Laptop setup](./tech/laptop-setup.md)
-- [Tools I use](./tech/tools.md)
-- [Electronics](./tech/electronics.md)
+### Tech
 
-### Programming Languages
+- [Laptop setup](topics/tech/laptop-setup.md)
+- [Tools I use](topics/tech/tools.md)
+- [Electronics](topics/tech/electronics.md)
 
-- [Golang](tech/golang.md)
-- [Javascript](tech/javascript.md)
-- [Python](tech/python.md)
+#### Programming Languages
+
+- [Golang](topics/tech/golang.md)
+- [Javascript](topics/tech/javascript.md)
+- [Python](topics/tech/python.md)
 
 ## Books
 
