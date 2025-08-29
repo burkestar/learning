@@ -20,6 +20,7 @@ Curated notes and guides for rapidly learning various topics. The focus is on hi
 
 ### Technology, Software, Artificial Intelligence - nerdy stuff
 
+- [Accelerate](books/accelerate.md)
 - The DevOps Handbook
 - The Phoenix Project
 - The Goal
