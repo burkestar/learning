@@ -14,6 +14,7 @@ Curated notes and guides for rapidly learning various topics. The focus is on hi
     - [AWS VPC](topics/tech/aws-vpc.md)
     - [AWS IAM](topics/tech/aws-iam.md)
     - [AWS EKS](topics/tech/aws-eks.md)
+- [Continuous Delivery](topics/tech/continuous-delivery.md)
 
 #### Programming Languages
 
