@@ -22,6 +22,7 @@ Curated notes and guides for rapidly learning various topics. The focus is on hi
 
 - [Refactoring](books/refactoring.md)
 - [Accelerate](books/accelerate.md)
+- [Monolith to Microservices](books/monolith-to-microservices.md)
 - The DevOps Handbook
 - The Phoenix Project
 - The Goal
