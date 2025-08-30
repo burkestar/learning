@@ -42,6 +42,7 @@
 
 - `rustup` - Rust installer and version management. Installs the Rust compiler and `cargo`.
 - `cargo` - Rust build tool and package manager
+- `rustfmt` - Rust formatter
 
 ### Commands
 
