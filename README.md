@@ -19,9 +19,10 @@ Curated notes and guides for rapidly learning various topics. The focus is on hi
 
 #### Programming Languages
 
+- [Python](topics/tech/python.md)
 - [Golang](topics/tech/golang.md)
 - [Javascript](topics/tech/javascript.md)
-- [Python](topics/tech/python.md)
+- [Rust](topics/tech/rust.md)
 
 ## Books
 
