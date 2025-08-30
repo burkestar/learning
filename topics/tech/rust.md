@@ -40,6 +40,27 @@
 
 ## Tools
 
+- `rustup` - Rust installer and version management. Installs the Rust compiler and `cargo`.
+- `cargo` - Rust build tool and package manager
+
+### Commands
+
+- `cargo new` to bootstrap a new project
+- `cargo build` to build project
+- `cargo run` to run project
+- `cargo test` to test project
+- `cargo doc` to build documentation for project
+- `cargo publish` to publish a library to crates.io
+- `cargo clean` - Removes the `target/` directory for current project
+- `cargo cache --autoclean` - Cleans unused cached dependencies (requires cargo-cache tool)
+
+- `rustup component remove` - Remove unused toolchain components
+
+
+### IDE
+
+- VS Code or Cursor with [rust-analyzer](https://code.visualstudio.com/docs/languages/rust) plugin
+
 ### Web Development
 
 - **[Axum](https://github.com/tokio-rs/axum)** - Modern web framework built on Tokio
@@ -88,96 +109,142 @@
 
 ### Design Goals That Inspired Rust
 
-• **Memory safety without garbage collection** - Eliminate common bugs like buffer overflows, use-after-free, and memory leaks without the performance overhead of a garbage collector
+- **Memory safety without garbage collection** - Eliminate common bugs like buffer overflows, use-after-free, and memory leaks without the performance overhead of a garbage collector
 
-• **Zero-cost abstractions** - Provide high-level programming constructs that compile down to the same performance as hand-written low-level code
+- **Zero-cost abstractions** - Provide high-level programming constructs that compile down to the same performance as hand-written low-level code
 
-• **Concurrency without data races** - Enable safe concurrent programming by preventing data races at compile time rather than runtime
+- **Concurrency without data races** - Enable safe concurrent programming by preventing data races at compile time rather than runtime
 
-• **Systems-level control with high-level ergonomics** - Give programmers fine-grained control over system resources while maintaining expressive, readable code
+- **Systems-level control with high-level ergonomics** - Give programmers fine-grained control over system resources while maintaining expressive, readable code
 
-• **Practical performance** - Achieve performance comparable to C and C++ while being safer and more productive to use
+- **Practical performance** - Achieve performance comparable to C and C++ while being safer and more productive to use
 
-• **Reliability and correctness** - Catch as many bugs as possible at compile time rather than allowing them to surface at runtime
+- **Reliability and correctness** - Catch as many bugs as possible at compile time rather than allowing them to surface at runtime
 
-• **Fearless concurrency** - Make concurrent programming accessible to more developers by eliminating common pitfalls through language design
+- **Fearless concurrency** - Make concurrent programming accessible to more developers by eliminating common pitfalls through language design
 
-• **Cross-platform compatibility** - Run efficiently on everything from embedded devices to web servers with consistent behavior
+- **Cross-platform compatibility** - Run efficiently on everything from embedded devices to web servers with consistent behavior
 
-• **Interoperability with existing systems** - Integrate seamlessly with C codebases and existing system libraries
+- **Interoperability with existing systems** - Integrate seamlessly with C codebases and existing system libraries
 
-• **Developer productivity** - Provide helpful compiler messages, excellent tooling, and modern language features that reduce development time
+- **Developer productivity** - Provide helpful compiler messages, excellent tooling, and modern language features that reduce development time
 
 ### Language Features
 
 #### Core Safety Features
 
-• **Ownership system** - Compile-time memory management through move semantics, borrowing, and lifetimes that eliminates manual memory management
+- **Ownership system** - Compile-time memory management through move semantics, borrowing, and lifetimes that eliminates manual memory management
 
-• **Borrow checker** - Static analysis that prevents data races, use-after-free errors, and other memory safety issues at compile time
+- **Borrow checker** - Static analysis that prevents data races, use-after-free errors, and other memory safety issues at compile time
 
-• **No null pointers** - Use `Option<T>` type instead of nullable references, eliminating null pointer dereferences
+- **No null pointers** - Use `Option<T>` type instead of nullable references, eliminating null pointer dereferences
 
-• **Pattern matching with exhaustiveness checking** - Comprehensive match expressions that ensure all cases are handled
+- **Pattern matching with exhaustiveness checking** - Comprehensive match expressions that ensure all cases are handled
 
 #### Type System
 
-• **Strong static typing** - Catch type errors at compile time with sophisticated type inference
+- **Strong static typing** - Catch type errors at compile time with sophisticated type inference
 
-• **Generics with zero runtime cost** - Monomorphization creates specialized versions of generic code for each concrete type used
+- **Generics with zero runtime cost** - Monomorphization creates specialized versions of generic code for each concrete type used
 
-• **Traits system** - Flexible interface system similar to type classes that enables code reuse and polymorphism
+- **Traits system** - Flexible interface system similar to type classes that enables code reuse and polymorphism
 
-• **Algebraic data types** - Powerful enum types that can hold different kinds of data, enabling expressive domain modeling
+- **Algebraic data types** - Powerful enum types that can hold different kinds of data, enabling expressive domain modeling
 
 #### Concurrency and Parallelism
 
-• **Send and Sync traits** - Type system markers that indicate whether types can be safely transferred between threads or shared between threads
+- **Send and Sync traits** - Type system markers that indicate whether types can be safely transferred between threads or shared between threads
 
-• **Channels for message passing** - Built-in communication primitives for passing data between threads safely
+- **Channels for message passing** - Built-in communication primitives for passing data between threads safely
 
-• **Async/await syntax** - Native support for asynchronous programming with futures and async functions
+- **Async/await syntax** - Native support for asynchronous programming with futures and async functions
 
-• **Thread-safe reference counting** - `Arc<T>` and `Rc<T>` types for safe memory sharing
+- **Thread-safe reference counting** - `Arc<T>` and `Rc<T>` types for safe memory sharing
 
 #### Performance Features
 
-• **Zero-cost abstractions** - High-level constructs compile to efficient machine code without runtime overhead
+- **Zero-cost abstractions** - High-level constructs compile to efficient machine code without runtime overhead
 
-• **No garbage collector** - Deterministic memory management without stop-the-world pauses
+- **No garbage collector** - Deterministic memory management without stop-the-world pauses
 
-• **Minimal runtime** - Very small runtime system that doesn't interfere with performance-critical code
+- **Minimal runtime** - Very small runtime system that doesn't interfere with performance-critical code
 
-• **Inline assembly support** - Direct access to assembly language when maximum performance is needed
+- **Inline assembly support** - Direct access to assembly language when maximum performance is needed
 
 #### Modern Language Design
 
-• **Expression-oriented syntax** - Most constructs are expressions that return values, enabling functional programming patterns
+- **Expression-oriented syntax** - Most constructs are expressions that return values, enabling functional programming patterns
 
-• **Closures with flexible capture** - Anonymous functions that can capture their environment by value, reference, or mutable reference
+- **Closures with flexible capture** - Anonymous functions that can capture their environment by value, reference, or mutable reference
 
-• **Cargo package manager and build system** - Integrated dependency management, building, testing, and documentation generation
+- **Cargo package manager and build system** - Integrated dependency management, building, testing, and documentation generation
 
-• **Comprehensive standard library** - Rich set of data structures, I/O primitives, and system interfaces
+- **Comprehensive standard library** - Rich set of data structures, I/O primitives, and system interfaces
 
 #### Developer Experience
 
-• **Helpful compiler messages** - Detailed error messages with suggestions for fixes and explanations of ownership issues
+- **Helpful compiler messages** - Detailed error messages with suggestions for fixes and explanations of ownership issues
 
-• **Built-in testing framework** - Unit tests, integration tests, and documentation tests are first-class language features
+- **Built-in testing framework** - Unit tests, integration tests, and documentation tests are first-class language features
 
-• **Documentation comments** - Comments that generate API documentation and can include runnable code examples
+- **Documentation comments** - Comments that generate API documentation and can include runnable code examples
 
-• **Rustfmt for consistent formatting** - Official code formatter that enforces consistent style across projects
+- **Rustfmt for consistent formatting** - Official code formatter that enforces consistent style across projects
 
-• **Clippy linter** - Advanced static analysis tool that suggests improvements and catches common mistakes
+- **Clippy linter** - Advanced static analysis tool that suggests improvements and catches common mistakes
 
 #### Interoperability
 
-• **Foreign Function Interface (FFI)** - Direct calling of C functions and libraries with minimal overhead
+- **Foreign Function Interface (FFI)** - Direct calling of C functions and libraries with minimal overhead
 
-• **C-compatible data layout** - Structs and enums can be made compatible with C representations
+- **C-compatible data layout** - Structs and enums can be made compatible with C representations
 
-• **WebAssembly target** - First-class compilation target for running Rust code in web browsers and other WASM environments
+- **WebAssembly target** - First-class compilation target for running Rust code in web browsers and other WASM environments
 
 These design goals and features work together to create a language that delivers the performance and control of systems programming languages while providing the safety and productivity of higher-level languages.
+
+### Organization
+
+#### Global Cargo Directories
+
+- **`~/.cargo/registry/`** - Downloaded crate sources and metadata from crates.io and other registries
+  - **`~/.cargo/registry/src/`** - Source code of downloaded crates
+  - **`~/.cargo/registry/cache/`** - Compressed crate files (.crate archives)
+
+- **`~/.cargo/git/`** - Git repositories for dependencies specified with git URLs
+  - **`~/.cargo/git/db/`** - Bare git repositories
+  - **`~/.cargo/git/checkouts/`** - Working copies of git dependencies at specific commits
+
+- **`~/.cargo/bin/`** - Installed binary executables from `cargo install`
+
+- **`~/.cargo/.global-cache/`** - Global build cache shared across projects (introduced in newer Cargo versions)
+
+#### Rustup Directories for managing toolchains
+
+- **`~/.rustup/`** - Rustup installation directory
+  - **`~/.rustup/toolchains/`** - Different Rust compiler versions and targets
+  - **`~/.rustup/downloads/`** - Temporary download cache for toolchain components
+
+#### Project-Level Directories
+
+- **`target/`** - The primary build output directory containing all compiled artifacts, dependencies, and build cache
+  - **`target/build/`** - Build script outputs and cached results
+  - **`target/debug/`** - Debug build artifacts and executables
+  - **`target/deps/`** - Compiled dependencies and their metadata
+  - **`target/incremental/`** - Incremental compilation cache for faster rebuilds
+  - **`target/release/`** - Optimized release build artifacts
+  - **`target/.fingerprint/`** - Dependency fingerprinting data for determining when rebuilds are needed
+  - **`target/.rustc_info.json`** - Cached compiler version and feature information
+
+- **`Cargo.lock`** - Dependency version lock file (technically a file, but crucial for reproducible builds)
+
+Tips:
+
+- **Add `target/` to `.gitignore`** - Never commit build artifacts to version control
+- **Backup `Cargo.lock`** - Commit this file for reproducible builds
+
+### Environment Variable Configuration
+
+- **`$CARGO_HOME`** - Override default `~/.cargo/` location
+- **`$CARGO_TARGET_DIR`** - Override default `target/` directory location
+- **`$RUSTUP_HOME`** - Override default `~/.rustup/` location
