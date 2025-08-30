@@ -205,25 +205,109 @@ These design goals and features work together to create a language that delivers
 
 ### Organization
 
-#### Global Cargo Directories
+- `Package` -> `Crate` -> `Module`
+- A **Package** is a bundle of one or more crates defined by a `Cargo.toml` file.
+- Package rules:
+    - Must contain at most one library crate
+    - Can contain any number of binary crates
+    - Must contain at least one crate (library or binary)
+- A **Crate** is a compilation unit - either a library or binary
+- **Modules** organize code within a crate using the`mod` keyword
+- Module File Resolution in order:
+    - Simple module: `src/module_name.rs`
+    - Directory module: `src/module_name/mod.rs`
 
-- **`~/.cargo/registry/`** - Downloaded crate sources and metadata from crates.io and other registries
-  - **`~/.cargo/registry/src/`** - Source code of downloaded crates
-  - **`~/.cargo/registry/cache/`** - Compressed crate files (.crate archives)
+Inline module:
 
-- **`~/.cargo/git/`** - Git repositories for dependencies specified with git URLs
-  - **`~/.cargo/git/db/`** - Bare git repositories
-  - **`~/.cargo/git/checkouts/`** - Working copies of git dependencies at specific commits
+```rust
+// In lib.rs or main.rs
+mod database {
+    pub fn connect() {
+        // implementation
+    }
+    
+    mod connection {
+        pub fn establish() {
+            // private to database module
+        }
+    }
+}
 
-- **`~/.cargo/bin/`** - Installed binary executables from `cargo install`
+mod api {
+    pub fn handle_request() {
+        // implementation
+    }
+}
+```
 
-- **`~/.cargo/.global-cache/`** - Global build cache shared across projects (introduced in newer Cargo versions)
+File-based module:
 
-#### Rustup Directories for managing toolchains
+```rust
+// In lib.rs
+mod database;  // Looks for src/database.rs or src/database/mod.rs
+mod api;       // Looks for src/api.rs or src/api/mod.rs
 
-- **`~/.rustup/`** - Rustup installation directory
-  - **`~/.rustup/toolchains/`** - Different Rust compiler versions and targets
-  - **`~/.rustup/downloads/`** - Temporary download cache for toolchain components
+// In src/database.rs
+pub fn connect() {
+    // implementation
+}
+
+pub mod queries {  // Submodule in src/database/queries.rs
+    pub fn select_user() {
+        // implementation
+    }
+}
+```
+
+Visibility and privacy:
+
+- Everything is private by default
+- Use `pub` to make items public
+- Child modules can access private items in parent modules
+- Parent modules cannot access private items in child modules
+
+Paths:
+
+- Absolute paths start from crate root
+
+```rust
+use crate::database::queries::select_user;
+```
+
+- Relative paths start from current module: 
+
+```rust
+use super::utils::helper_function;  // Parent module
+use self::submodule::function;      // Current module
+```
+
+- Using external crates:
+
+```rust
+use std::collections::HashMap;           // Standard library
+use serde::{Serialize, Deserialize};     // External crate
+```
+
+Public interfaces with `pub use`:
+
+```rust
+// In lib.rs
+mod internal {
+    pub struct ImportantStruct;
+    pub fn important_function() {}
+}
+
+mod utils {
+    pub fn utility_function() {}
+}
+
+// Re-export for clean public API
+pub use internal::{ImportantStruct, important_function};
+pub use utils::utility_function;
+
+// Users can now use:
+// use my_crate::{ImportantStruct, important_function, utility_function};
+```
 
 #### Project-Level Directories
 
@@ -243,8 +327,68 @@ Tips:
 - **Add `target/` to `.gitignore`** - Never commit build artifacts to version control
 - **Backup `Cargo.lock`** - Commit this file for reproducible builds
 
+Project layout:
+
+```text
+my_project/
+├── Cargo.toml          # Package manifest
+├── Cargo.lock          # Dependency lock file (auto-generated)
+├── src/                # Source code
+│   ├── main.rs         # Binary entry point
+│   ├── lib.rs          # Library entry point
+│   └── bin/            # Additional binary targets
+├── tests/              # Integration tests
+├── examples/           # Example code
+├── benches/            # Benchmarks
+└── target/             # Build artifacts (auto-generated)
+```
+
+Module organization:
+
+```text
+src/
+├── main.rs
+├── lib.rs
+├── utils.rs            # Simple module
+├── database/           # Complex module as directory
+│   ├── mod.rs          # Module declaration
+│   ├── connection.rs
+│   └── queries.rs
+└── api/
+    ├── mod.rs
+    ├── handlers.rs
+    └── middleware.rs
+```
+
+### Conventions
+
+- Use lowercase with hyphens for package names: `my-awesome-crate`
+- Hyphnes for package names become underscores when importing in code (`use my_awesome_crate::SomeType;`)
+- Use `snake_case` for filenames.
+
+
 ### Environment Variable Configuration
 
 - **`$CARGO_HOME`** - Override default `~/.cargo/` location
 - **`$CARGO_TARGET_DIR`** - Override default `target/` directory location
 - **`$RUSTUP_HOME`** - Override default `~/.rustup/` location
+
+### Global Cargo Directories
+
+- **`~/.cargo/registry/`** - Downloaded crate sources and metadata from crates.io and other registries
+  - **`~/.cargo/registry/src/`** - Source code of downloaded crates
+  - **`~/.cargo/registry/cache/`** - Compressed crate files (.crate archives)
+
+- **`~/.cargo/git/`** - Git repositories for dependencies specified with git URLs
+  - **`~/.cargo/git/db/`** - Bare git repositories
+  - **`~/.cargo/git/checkouts/`** - Working copies of git dependencies at specific commits
+
+- **`~/.cargo/bin/`** - Installed binary executables from `cargo install`
+
+- **`~/.cargo/.global-cache/`** - Global build cache shared across projects (introduced in newer Cargo versions)
+
+#### Rustup Directories for managing toolchains
+
+- **`~/.rustup/`** - Rustup installation directory
+  - **`~/.rustup/toolchains/`** - Different Rust compiler versions and targets
+  - **`~/.rustup/downloads/`** - Temporary download cache for toolchain components
