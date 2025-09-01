@@ -284,3 +284,79 @@
 **WAITER:** "Perfecto. Ahora mismo se lo traigo."
 *(per-FEK-toh. ah-OH-rah MEES-moh seh loh TRAH-ee-goh)*
 *"Perfect. I'll bring it right away."*
+
+
+### Checking into hotel
+
+# Spanish Hotel Check-In Conversation (Casual but Polite)
+
+## **The Complete Conversation**
+
+---
+
+**RECEPTIONIST:** "¡Hola! ¿Qué tal? ¿En qué les puedo ayudar?"
+*(OH-lah! keh tahl? en keh lehs PWEH-doh ah-yoo-DAHR?)*
+*"Hi! How's it going? How can I help you?"*
+
+**YOU:** "¡Hola! Tenemos una reserva."
+*(OH-lah! teh-NEH-mohs OO-nah reh-SEHR-bah)*
+*"Hi! We have a reservation."*
+
+**RECEPTIONIST:** "Vale, muy bien. ¿A qué nombre?"
+*(BAH-leh, mwee bee-EN. ah keh NOHM-breh?)*
+*"Okay, great. Under what name?"*
+
+**YOU:** "Burke."
+
+**RECEPTIONIST:** "Ah sí, aquí está. Para cuatro personas, ¿no?"
+*(ah see, ah-KEE es-TAH. PAH-rah KWAH-troh per-SOH-nahs, noh?)*
+*"Ah yes, here it is. For four people, right?"*
+
+**YOU:** "Sí, exacto."
+*(see, ehk-SAHK-toh)*
+*"Yes, exactly."*
+
+**RECEPTIONIST:** "Perfecto. ¿Me enseñan los pasaportes?"
+*(per-FEK-toh. meh en-SEH-nyahn lohs pah-sah-POHR-tehs?)*
+*"Perfect. Can you show me the passports?"*
+
+**YOU:** "Claro, aquí tienes."
+*(KLAH-roh, ah-KEE tee-EH-nehs)*
+*"Sure, here you go."*
+
+**RECEPTIONIST:** "Gracias. ¿Cómo van a pagar? ¿Tarjeta?"
+*(GRAH-see-ahs. KOH-moh bahn ah pah-GAHR? tahr-HEH-tah?)*
+*"Thanks. How are you paying? Card?"*
+
+**YOU:** "Sí, con tarjeta."
+*(see, kon tahr-HEH-tah)*
+*"Yes, with card."*
+
+**RECEPTIONIST:** "Vale, perfecto. Aquí tienen las llaves. Habitación 305, tercera planta. El ascensor está por ahí."
+*(BAH-leh, per-FEK-toh. ah-KEE tee-EH-nen lahs YAH-behs. ah-bee-tah-see-OHN trehs-see-en-tos-SEEN-koh, ter-SEH-rah PLAHN-tah. el ah-sen-SOHR es-TAH por ah-EE)*
+*"Okay, perfect. Here are your keys. Room 305, third floor. The elevator is over there."*
+
+**YOU:** "Gracias. Oye, ¿a qué hora es el desayuno?"
+*(GRAH-see-ahs. OH-yeh, ah keh OH-rah es el deh-sah-YOO-noh?)*
+*"Thanks. Hey, what time is breakfast?"*
+
+**RECEPTIONIST:** "De siete a diez, abajo en el restaurante."
+*(deh see-EH-teh ah dee-EHS, ah-BAH-hoh en el res-tow-RAHN-teh)*
+*"From seven to ten, downstairs in the restaurant."*
+
+**YOU:** "Vale. ¿Y hay WiFi?"
+*(BAH-leh. ee ay wee-fee?)*
+*"Okay. And is there WiFi?"*
+
+**RECEPTIONIST:** "Sí, gratis. La clave es 'Hotel2025'."
+*(see, GRAH-tees. lah KLAH-beh es Hotel2025)*
+*"Yes, free. The password is 'Hotel2025'."*
+
+**YOU:** "Genial, gracias por todo."
+*(heh-nee-AHL, GRAH-see-ahs por TOH-doh)*
+*"Great, thanks for everything."*
+
+**RECEPTIONIST:** "De nada. ¡Que disfrutéis!"
+*(deh NAH-dah. keh dees-froo-TAYS)*
+*"No problem. Enjoy!"*
+
