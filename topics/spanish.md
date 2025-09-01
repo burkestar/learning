@@ -226,8 +226,6 @@
 
 ### Ordering a meal
 
----
-
 **WAITER:** "Buenas tardes. ¿Ya han decidido qué van a pedir?"
 *(BWEH-nahs TAHR-dehs. yah ahn deh-see-DEE-doh keh bahn ah peh-DEER?)*
 *"Good afternoon. Have you already decided what you're going to order?"*
@@ -246,7 +244,6 @@
 **If you don't understand the meat question:**
 - "¿Puede repetir?" (Can you repeat?)
 - "No entiendo" (I don't understand)
-
 
 **YOU:** "Al punto, por favor."
 *(ahl POON-toh por fah-BOHR)*
@@ -285,14 +282,10 @@
 *(per-FEK-toh. ah-OH-rah MEES-moh seh loh TRAH-ee-goh)*
 *"Perfect. I'll bring it right away."*
 
+---
 
 ### Checking into hotel
 
-# Spanish Hotel Check-In Conversation (Casual but Polite)
-
-## **The Complete Conversation**
-
----
 
 **RECEPTIONIST:** "¡Hola! ¿Qué tal? ¿En qué les puedo ayudar?"
 *(OH-lah! keh tahl? en keh lehs PWEH-doh ah-yoo-DAHR?)*
@@ -359,4 +352,6 @@
 **RECEPTIONIST:** "De nada. ¡Que disfrutéis!"
 *(deh NAH-dah. keh dees-froo-TAYS)*
 *"No problem. Enjoy!"*
+
+---
 
