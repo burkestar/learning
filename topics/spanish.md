@@ -57,9 +57,7 @@
 #### Emergency Numbers & Medical
 
 - **Llame al 112** (YAH-meh ahl see-EN-toh doh-SEH) - Call 112 (emergency)
-- **Soy alérgico/a a...** (soy ah-LEHR-hee-koh/kah ah) - I'm allergic to...
 - **¿Dónde está el hospital?** (DOHN-deh es-TAH el os-pee-TAHL?) - Where is the hospital?
-- **Me duele...** (meh DWEH-leh) - It hurts... / I have pain in...
 
 ### **AIRPORT & TRANSPORTATION**
 
@@ -88,9 +86,6 @@
 #### Check-in/Check-out
 
 - **Tengo una reserva** (TEN-goh OO-nah reh-SEHR-bah) - I have a reservation
-- **¿Hay habitaciones libres?** (ay ah-bee-tah-see-OH-nehs LEE-brehs?) - Are there available rooms?
-- **¿Cuánto cuesta por noche?** (KWAN-toh KWES-tah por NOH-cheh?) - How much per night?
-- **¿Está incluido el desayuno?** (es-TAH een-kloo-EE-doh el deh-sah-YOO-noh?) - Is breakfast included?
 - **La llave, por favor** (lah YAH-beh por fah-BOHR) - The key, please
 - **¿A qué hora es el check-out?** (ah keh OH-rah es el chek-owt?) - What time is check-out?
 
@@ -227,14 +222,65 @@
 19. **Me lo llevo** - I'll take it
 20. **Vale** - Okay
 
-### **MEMORIZATION STRATEGY FOR 2 WEEKS**
+## Situations
 
-- **Days 1-3**: Emergency phrases and numbers
-- **Days 4-6**: Transportation and hotel basics  
-- **Days 7-9**: Food and dining
-- **Days 10-12**: Shopping and directions
-- **Days 13-14**: Practice conversations combining all phrases
+### Ordering a meal
 
-**Daily Practice**: Spend 30 minutes saying these phrases OUT LOUD. Record yourself and listen back. The key is muscle memory for your mouth and tongue!
+---
 
-**Pro Tip**: Spanish pronunciation is very consistent - once you learn the sounds, you can read any Spanish word correctly. Focus on rolling your R's and remember that Spanish vowels are always pronounced the same way.
+**WAITER:** "Buenas tardes. ¿Ya han decidido qué van a pedir?"
+*(BWEH-nahs TAHR-dehs. yah ahn deh-see-DEE-doh keh bahn ah peh-DEER?)*
+*"Good afternoon. Have you already decided what you're going to order?"*
+
+**If you need more time:**
+- "¿Puedo tener unos minutos más?" (Can I have a few more minutes?)
+
+**YOU:** "Sí, quisiera el bistec, por favor."
+*(see, kee-see-EH-rah el bees-TEK por fah-BOHR)*
+*"Yes, I would like the steak, please."*
+
+**WAITER:** "Muy bien. ¿Cómo lo quiere? ¿Poco hecho, al punto, o muy hecho?"
+*(mwee bee-EN. KOH-moh loh kee-EH-reh? POH-koh EH-choh, ahl POON-toh, oh mwee EH-choh?)*
+*"Very good. How would you like it? Rare, medium, or well-done?"*
+
+**If you don't understand the meat question:**
+- "¿Puede repetir?" (Can you repeat?)
+- "No entiendo" (I don't understand)
+
+
+**YOU:** "Al punto, por favor."
+*(ahl POON-toh por fah-BOHR)*
+*"Medium, please."*
+
+**WAITER:** "Perfecto. ¿Y para beber?"
+*(per-FEK-toh. ee PAH-rah beh-BEHR?)*
+*"Perfect. And to drink?"*
+
+**YOU:** "Un vaso de agua, por favor."
+*(oon BAH-soh deh AH-gwah por fah-BOHR)*
+*"A glass of water, please."*
+
+**Other drink options:**
+- "Una cerveza" (A beer)
+- "Un vino tinto" (Red wine)
+- "Una Coca-Cola" (A Coke)
+
+**WAITER:** "¿Con gas o sin gas?"
+*(kon gahs oh seen gahs?)*
+*"With bubbles or without bubbles?" (sparkling or still)*
+
+**YOU:** "Sin gas, gracias."
+*(seen gahs GRAH-see-ahs)*
+*"Still, thank you."*
+
+**WAITER:** "Muy bien. ¿Algo más?"
+*(mwee bee-EN. AHL-goh mahs?)*
+*"Very good. Anything else?"*
+
+**YOU:** "No, eso es todo. Gracias."
+*(noh, EH-soh es TOH-doh. GRAH-see-ahs)*
+*"No, that's everything. Thank you."*
+
+**WAITER:** "Perfecto. Ahora mismo se lo traigo."
+*(per-FEK-toh. ah-OH-rah MEES-moh seh loh TRAH-ee-goh)*
+*"Perfect. I'll bring it right away."*
