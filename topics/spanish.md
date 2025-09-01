@@ -50,9 +50,16 @@
 - **Necesito ayuda** (neh-seh-SEE-toh ah-YOO-dah) - I need help
 - **¿Habla inglés?** (AH-blah een-GLAYS?) - Do you speak English?
 - **No hablo español** (noh AH-bloh es-pahn-YOHL) - I don't speak Spanish
+- **Mi español no es muy bueno** (mee es-pahn-YOHL noh es mwee BWEH-noh) - "My Spanish isn't very good" 
 - **No entiendo** (noh en-tee-EN-doh) - I don't understand
+- **No sé** - I don't know
 - **¿Puede repetir?** (PWEH-deh reh-peh-TEER?) - Can you repeat?
 - **Más despacio, por favor** (mahs des-PAH-see-oh por fah-BOHR) - Slower, please
+- **¿Hablas más despacio?** (AH-blahs mahs des-PAH-see-oh) - "Can you speak slower?"
+- **¡Cuidado!** (kwee-DAH-doh) - "Watch out!/Be careful!" 
+- **¡Ojo!** (OH-hoh) - "Watch out!/Heads up!"
+- **¡Atención!** (ah-ten-see-OHN) - "Attention!" - Formal warning
+- **¿Cómo se dice…?** – How do you say…? 
 
 #### Emergency Numbers & Medical
 
@@ -76,6 +83,7 @@
 - **¿A qué hora sale?** (ah keh OH-rah SAH-leh?) - What time does it leave?
 - **Un billete a...** (oon bee-YEH-teh ah) - One ticket to...
 - **¿Dónde está la parada?** (DOHN-deh es-TAH lah pah-RAH-dah?) - Where is the stop?
+- **¿Hay metro cerca?** (ay MEH-troh SEHR-kah) "Is there a metro nearby?"
 - **el tren** (el trehn) - train
 - **el autobús** (el ow-toh-BOOS) - bus
 - **el metro** (el MEH-troh) - subway
@@ -101,19 +109,44 @@
 #### Restaurant Basics
 
 - **Una mesa para dos, por favor** (OO-nah MEH-sah PAH-rah dohs por fah-BOHR) - A table for two, please
+- **¿Tenéis mesa libre?** (teh-NAYS MEH-sah LEE-breh) - "Do you have a free table?"
 - **¿Tienen carta en inglés?** (tee-EH-nen KAHR-tah en een-GLAYS?) - Do you have a menu in English?
-- **¿Qué me recomienda?** (keh meh reh-koh-mee-EN-dah?) - What do you recommend?
+- **¿Qué me recomiendas?** (keh meh reh-koh-mee-EN-dahs?) - What do you recommend?
 - **Quisiera...** (kee-see-EH-rah) - I would like...
 - **Para mí...** (PAH-rah mee) - For me...
 - **La cuenta, por favor** (lah KWEN-tah por fah-BOHR) - The bill, please
 - **¿Está incluido el servicio?** (es-TAH een-kloo-EE-doh el sehr-BEE-see-oh?) - Is service included?
-
-#### Dietary Requirements
-
-- **Soy vegetariano/a** (soy beh-heh-tah-ree-AH-noh/nah) - I'm vegetarian
-- **No como carne** (noh KOH-moh KAHR-neh) - I don't eat meat
-- **Sin gluten** (seen GLOO-ten) - Gluten-free
+- **¿Está bueno?** (es-TAH BWEH-noh) - "Is it good?"
 - **¿Tiene...?** (tee-EH-neh?) - Do you have...?
+- **Tengo hambre** – I’m hungry.
+- **Tengo sed** – I’m thirsty. 
+- **Entrada / Aperitivo** (en-TRAH-dah / ah-peh-ree-TEE-bo) – Appetizer
+- **Plato principal** (PLAH-toh preen-see-PAHL) – Main course
+- **Está delicioso** (es-TAH deh-lee-SYOH-soh) – It’s delicious
+
+#### Common Foods
+
+- **Pollo** (POH-yoh) – Chicken
+- **Carne de res** (KAR-neh deh rehss) – Beef
+- **Mariscos** (mah-REE-skohs) – Seafood
+- **Ensalada** (en-sah-LAH-dah) – Salad
+- **Postre** (POHS-treh) – Dessert
+- **el pan** (pahn) = bread
+- **la leche** (LEH-cheh) = milk
+- **el agua** (AH-gwah) = water
+- **la fruta** (FROO-tah) = fruit
+- **el pescado** (pehs-KAH-doh) = fish
+
+#### Dining items
+
+- **la mesa** (MEH-sah) = table
+- **la silla** (SEE-yah) = chair
+- **el plato** (PLAH-toh) = plate
+- **el vaso** (BAH-soh) = glass
+- **la copa** (KOH-pah) = wine glass
+- **el tenedor** (teh-neh-DOHR) = fork
+- **el cuchillo** (koo-CHEE-yoh) = knife
+- **la cuchara** (koo-CHAH-rah) = spoon
 
 #### Essential Spanish Foods (for ordering)
 
@@ -127,10 +160,12 @@
 #### Drinks
 
 - **agua** (AH-gwah) - water
+- **Agua con/sin gas** (AH-gwah kon/seen gahs) – Sparkling/Still water
 - **vino tinto/blanco** (BEE-noh TEEN-toh/BLAHN-koh) - red/white wine
 - **cerveza** (sehr-BEH-sah) - beer
 - **café** (kah-FEH) - coffee
-- **sangría** (sahn-GREE-ah) - sangria
+- **Refresco** (reh-FREHS-koh) – Soft drink
+- **Jugo / Zumo** (HOO-go / SOO-moh) – Juice (“Jugo” in Latin America, “zumo” in Spain.)
 
 ### **SHOPPING & MONEY**
 
@@ -141,7 +176,24 @@
 - **¿Hay descuento?** (ay des-KWEN-toh?) - Is there a discount?
 - **¿Aceptan tarjetas?** (ah-SEP-tahn tahr-HEH-tahs?) - Do you accept cards?
 - **Sólo miro** (SOH-loh MEE-roh) - Just looking
-- **Me lo llevo** (meh loh YEH-boh) - I'll take it
+- **Me quedo con esto** (meh KEH-doh kon EHS-toh) - "I'll take this"
+- **el recibo** (reh-SEE-boh) - receipt
+- **la bolsa** (BOHL-sah) - bag
+- **el dinero** (dee-NEH-roh) = money
+- **el carrito** (kah-RREE-toh) = shopping cart
+- **la cesta** (SEHS-tah) = basket
+- **el precio** (PREH-see-oh) = price
+- **la oferta** (oh-FEHR-tah) = sale/offer
+
+Waiting in line:
+
+- **¿Estás en la cola?** (es-TAHS en lah KOH-lah) - "Are you in line?"
+- **¿Es usted el siguiente?** (es oos-TED el see-gee-EN-teh) "Are you next?"
+- **¿Hace cola?** (AH-seh KOH-lah) - "Are you in line?"
+- **¿Quién es el último?** (kee-EN es el OOL-tee-moh) "Who's last?" - To find the end of the line
+- **"Sí, soy el siguiente"** - "Yes, I'm next"
+- **"No, no hago cola"** - "No, I'm not in line"
+- **"El último está allí"** - "The last person is over there"
 
 #### Numbers (Essential for prices)
 
@@ -158,13 +210,18 @@
 
 - **¿Dónde está...?** (DOHN-deh es-TAH?) - Where is...?
 - **¿Cómo llego a...?** (KOH-moh YEH-goh ah?) - How do I get to...?
+- **¿Está lejos?** (es-TAH LEH-hohs) - "Is it far?"
+- **cerca** (SEHR-kah) - near
 - **a la derecha** (ah lah deh-REH-chah) - to the right
 - **a la izquierda** (ah lah ehs-kee-EHR-dah) - to the left  
 - **todo recto** (TOH-doh REHK-toh) - straight ahead
-- **cerca** (SEHR-kah) - near
-- **lejos** (LEH-hohs) - far
 - **aquí** (ah-KEE) - here
 - **allí** (ah-YEE) - there
+- **Estoy perdido/a** (es-TOY per-DEE-doh/dah) "I'm lost"
+- **¿Paráis en...?** (pah-RAYS en) - "Do you stop at...?" for bus/train confirmation
+- **¿De qué andén sale?** (deh keh ahn-DEN SAH-leh) - "Which platform does it leave from?"
+- **¿Dónde hay un cajero?** (DOHN-deh ay oon kah-HEH-roh) - "Where is an ATM?"
+- **¿Hasta qué hora está abierto?** (AHS-tah keh OH-rah es-TAH ah-bee-EHR-toh) - "Until what time is it open?"
 
 #### Important Locations
 
@@ -180,24 +237,66 @@
 #### Greetings
 
 - **Hola** (OH-lah) - Hello
+- **Oye** (OH-yeh) - Hey (to get someone's attention)
 - **Buenos días** (BWEH-nohs DEE-ahs) - Good morning
 - **Buenas tardes** (BWEH-nahs TAHR-dehs) - Good afternoon
 - **Buenas noches** (BWEH-nahs NOH-chehs) - Good evening/night
 - **Adiós** (ah-dee-OHS) - Goodbye
+- **Hasta mañana** – See you tomorrow.
+- **Hasta luego** – See you later. 
+- **Hasta pronto** – See you soon
+- **Nos vemos** – See you
+- **Gracias, buen día** (GRAH-see-ahs, bwen DEE-ah) - Thanks, good day
+- **Gracias, que tengas buen día** (GRAH-see-ahs, keh TEN-gahs bwen DEE-ah) - Thank you, have a nice day. _Tenga_ is polite, _tengas_ is casual.
+
+Introductions:
+
+- **¿Cómo te llamas?** – What’s your name? 
+- **¿Cuál es tu nombre?** – What’s your name? 
+- **Me llamo** - My name is...
+- **Mucho gusto** - Nice to meet you
+- **El placer es mío** - The pleasure is mine
+- **Encantado/Encantada** – Charmed
+- **¿De dónde eres?** – Where are you from?
+- **Soy de...** - I'm from...
+- **¿A qué te dedicas?** – What do you do? (for a living, for work)
+- **¿En qué trabajas?** – What’s your job?
+- **Trabajo en...** - I work at...
+- **¿Qué te gusta hacer**?** – What do you like to do?
+- **Me gusta / No me gusta**... – I like /  I don’t like...
 
 #### Essential Politeness
 
 - **Por favor** (por fah-BOHR) - Please
 - **Gracias** (GRAH-see-ahs) - Thank you
 - **De nada** (deh NAH-dah) - You're welcome
+- **No hay problema"** (noh ay proh-BLEH-mah) - No problem (universal, always appropriate)
+- **No pasa nada** (noh PAH-sah NAH-dah) - Nothing happens. It's no big deal. Casual and friendly.
 - **Perdón** (per-DOHN) - Excuse me/Sorry
 - **Disculpe** (dees-KOOL-peh) - Excuse me (to get attention)
+- **Con permiso** (kon per-MEE-soh) - Excuse me (to pass by) when navigating crowds
+- **¿Me puedes ayudar?** (meh PWEH-dehs ah-yoo-DAHR) - Can you help me?
+- **Por supuesto** - Of course
+- **Cuídate** – Take care
+
+Exclamations:
+
+- **¡Felicidades!** – Congratulations!
+- **¡Salud!** – Cheers!
+- **¡Buena suerte!** – Good luck!
+- **¡Bienvenido(a)!** – Welcome!
+- **¡Buen viaje!** – Have a good trip!
+- **¡Bien hecho!** – Well done!
 
 #### Spain-Specific Phrases
 
 - **Vale** (BAH-leh) - Okay (used constantly in Spain)
 - **¿Qué tal?** (keh tahl?) - How's it going?
 - **Muy bien** (mwee bee-EN) - Very good
+- **Tío/Tía** (TEE-oh/TEE-ah) - "Dude/Guy" - Casual address 
+- **Venga** (BEN-gah) - "Come on!" - Encouragement/agreement
+- **¡Qué bien!** (keh bee-EN) - "How nice!/Great!" - Positive reaction
+- **Total** (toh-TAHL) - "Totally/Exactly" - Agreement
 
 ### **QUICK REFERENCE - MOST CRITICAL 20 PHRASES**
 
