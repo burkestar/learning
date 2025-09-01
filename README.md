@@ -24,6 +24,11 @@ Curated notes and guides for rapidly learning various topics. The focus is on hi
 - [Javascript](topics/tech/javascript.md)
 - [Rust](topics/tech/rust.md)
 
+### Spoken language
+
+- [Spanish](topics/spanish.md)
+- French
+
 ## Books
 
 ### Technology, Software, Artificial Intelligence - nerdy stuff
