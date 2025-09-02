@@ -123,6 +123,7 @@
 - **Entrada / Aperitivo** (en-TRAH-dah / ah-peh-ree-TEE-bo) – Appetizer
 - **Plato principal** (PLAH-toh preen-see-PAHL) – Main course
 - **Está delicioso** (es-TAH deh-lee-SYOH-soh) – It’s delicious
+- **Provecho** - Enjoy
 
 #### Common Foods
 
@@ -164,6 +165,7 @@
 - **vino tinto/blanco** (BEE-noh TEEN-toh/BLAHN-koh) - red/white wine
 - **cerveza** (sehr-BEH-sah) - beer
 - **café** (kah-FEH) - coffee
+- **té** - tea
 - **Refresco** (reh-FREHS-koh) – Soft drink
 - **Jugo / Zumo** (HOO-go / SOO-moh) – Juice (“Jugo” in Latin America, “zumo” in Spain.)
 
@@ -241,11 +243,16 @@ Waiting in line:
 - **Buenos días** (BWEH-nohs DEE-ahs) - Good morning
 - **Buenas tardes** (BWEH-nahs TAHR-dehs) - Good afternoon
 - **Buenas noches** (BWEH-nahs NOH-chehs) - Good evening/night
-- **Adiós** (ah-dee-OHS) - Goodbye
+- **Buenas** - This is a shorthand greeting that works any time of day.
+- **¿Y tú?** - And you?
+- **Yo tambien** - me too
+- **Igualmente** - equally, likewise
+- **Adiós** (ah-dee-OHS) - Goodbye 
 - **Hasta mañana** – See you tomorrow.
 - **Hasta luego** – See you later. 
 - **Hasta pronto** – See you soon
 - **Nos vemos** – See you
+- **Te veo al rato** - See you later
 - **Gracias, buen día** (GRAH-see-ahs, bwen DEE-ah) - Thanks, good day
 - **Gracias, que tengas buen día** (GRAH-see-ahs, keh TEN-gahs bwen DEE-ah) - Thank you, have a nice day. _Tenga_ is polite, _tengas_ is casual.
 
@@ -254,16 +261,36 @@ Introductions:
 - **¿Cómo te llamas?** – What’s your name? 
 - **¿Cuál es tu nombre?** – What’s your name? 
 - **Me llamo** - My name is...
-- **Mucho gusto** - Nice to meet you
+ - **Mucho gusto** - Nice to meet you
 - **El placer es mío** - The pleasure is mine
 - **Encantado/Encantada** – Charmed
 - **¿De dónde eres?** – Where are you from?
-- **Soy de...** - I'm from...
-- **¿A qué te dedicas?** – What do you do? (for a living, for work)
+- **Soy de los estados unidos** - I'm from the United States
+- **De que parte** - From which part?
+ - **¿A qué te dedicas?** – What do you do? (for a living, for work)
 - **¿En qué trabajas?** – What’s your job?
 - **Trabajo en...** - I work at...
 - **¿Qué te gusta hacer**?** – What do you like to do?
 - **Me gusta / No me gusta**... – I like /  I don’t like...
+
+Casual:
+
+- **¿Qué hay de nuevo?** - What's new?
+- **Qué estás haciendo?** - What are you doing?
+- **Estoy trabajando** - I am working
+- **Tengo mucho trabajo** - I have a lot of work
+- **Tengo frio** - I am cold
+- **Tengo calor** - I am hot
+- **Hace frio** - It is cold
+- **Hace calor** - It is hot
+- **¿Tienes hambre?** - Are you hungry?
+- **Voy por un café** - I'm going for a coffee
+- **¿Quieres algo?** - Do you want anything?
+- **¿Me traes un café?** - Can you bring me a coffee?
+- **No tengo tiempo** - I don't have time
+- **Espera** - Wait
+- **¿Tienes efectivo?** - Do you have cash?
+- **No, solo tengo tarjeta** - No, I only have card
 
 #### Essential Politeness
 
