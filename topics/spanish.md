@@ -2,17 +2,25 @@
 
 ## Learning Resources
 
+### Advice
+
+- I recommend starting with Pimsleur as it gets you started practicing realistic conversations and builds incrementally from there.  It's structured into 5 levels, with 30 lessons per level.  Each lesson is 30 minutes and makes for a good daily habit.  I like that the lessons are purely auditory to get you listening and pronouncing the words rather than just reading them.  And it has great spaced repetition and randomization to keep reinforcing and practicing.  Each lesson has some practice tools like flashcards and a pronunciation challenge that records your voice and rates how well you responded. These programs frequently go on sale for the yearly or lifetime membership.
+- There are so many learning resources.  Don't overwhelm yourself, just pick 1 to get started and make it a habit.  If its not working well for you, pick another one.
+- I don't recommend Duolingo.  It's mostly vocabulary focused, and too gamified, so it will take you a lot longer to have useful conversational skills.
+- Change the language settings on your phone and laptop to Spanish.  It will reinforce a lot more vocabulary because you'll see some words repeatedly in the menus.  Plus it forces you to go figure out what things mean.
+
 ### Programs
 
-- [Rosetta Stone](https://www.rosettastone.com) is the gold standard with an immersive approach and image-based learning. It's meant to follow a natural approach to learning like a child which means the starting lessons are not very practical for realistic everyday conversation.
-    - Annual: $239 ($20/mo) - single language (on sale for $119)
-    - Lifetime $399 - all languages (frequently on sale for $179)
+
 - [Pimsleur](https://www.pimsleur.com/learn-spanish-spain-castilian/#premium_monthly) for speaking proficiency, used by government agencies, conversation focused
     - Annual: $164 ($14/mo) - all languages
     - Lifetime: $798 - all languages (on sale $598)
 - [Babbel](https://get.babbel.com) for practical every day conversations
     - Annual: $215 ($18/mo) - all languages
     - Lifetime: $300 - all languages (on sale for $199)
+- [Rosetta Stone](https://www.rosettastone.com) is the gold standard with an immersive approach and image-based learning. It's meant to follow a natural approach to learning like a child which means the starting lessons are not very practical for realistic everyday conversation.
+    - Annual: $239 ($20/mo) - single language (on sale for $119)
+    - Lifetime $399 - all languages (frequently on sale for $179)
 
 ### Conversational AI
 
@@ -33,6 +41,11 @@
 - [Butterfly Spanish](https://www.youtube.com/channel/UC9yudInUYzMh9H4gJs4DrHg)
 - [Dreaming Spanish](https://www.youtube.com/DreamingSpanish)
 - [Spanish Travel Course](https://www.youtube.com/watch?v=xUiKhcLaVKI)
+
+### Resources and Tools
+
+- Google Translate - use the mobile app and bookmark for your browser
+- [ReadLang](https://readlang.com) for inline translation of Spanish stories in your browser
 
 ### Vocabulary cards
 
