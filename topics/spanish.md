@@ -8,9 +8,9 @@
 - There are so many learning resources.  Don't overwhelm yourself, just pick 1 to get started and make it a habit.  If its not working well for you, pick another one.
 - I don't recommend Duolingo.  It's mostly vocabulary focused, and too gamified, so it will take you a lot longer to have useful conversational skills.
 - Change the language settings on your phone and laptop to Spanish.  It will reinforce a lot more vocabulary because you'll see some words repeatedly in the menus.  Plus it forces you to go figure out what things mean.
+- In terms of language levels: Beginner is A1-A2, Intermediate B1-B2 and Advanced C1-C2
 
 ### Programs
-
 
 - [Pimsleur](https://www.pimsleur.com/learn-spanish-spain-castilian/#premium_monthly) for speaking proficiency, used by government agencies, conversation focused
     - Annual: $164 ($14/mo) - all languages
@@ -57,6 +57,28 @@
 - [Anki decks](https://ankiweb.net/shared/decks?search=spanish)
 - Spanish Quick Study laminated guides for [grammar](https://www.amazon.com/Spanish-Grammar-Quick-Study-BarCharts/dp/1423219635/ref=sr_1_3?dib=eyJ2IjoiMSJ9.zMG6rbqp9cDFJHD_H_JV9T8yQguXW0ks4oAeVIMmgS_ZY1tS_je-rWbsgN2L6GhdnaCsLSvvO4KxfTFYhGmPG4uqz90xPXAfQ3XhuWh3Q9L840IZOdVbzMS7WWs2S_8b_y63Oey2MHDtxBfgkC-vFgwk12Ds3eYIFBoq2pwFCAOU6SGUT6sHAKmXUcU9-GmFQy5189uAahfHDtPZ6L99N4xf5A7IVUdBjRz8y0EnhQk.vE8b0MIcCC-97jpFGNrCMgcwkDpvX4enMlBBfRD-d2g&dib_tag=se&keywords=spanish+language+cheat+sheet&qid=1756734111&sr=8-3), [conversation](https://www.amazon.com/Spanish-Conversation-Quick-Study-Academic/dp/1423221877?psc=1&pd_rd_w=k2rvO&content-id=amzn1.sym.ea1d9533-fbb7-4608-bb6f-bfdceb6f6336&pf_rd_p=ea1d9533-fbb7-4608-bb6f-bfdceb6f6336&pf_rd_r=Y4VM01KGD6JM0ZWZ8GAB&pd_rd_wg=yyXZp&pd_rd_r=919bbc3f-1b02-4af1-aa53-beab76d5e64b&ref_=sspa_dk_detail_sbt_0&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM=), and [vocabulary](https://www.amazon.com/dp/1572225505/ref=sspa_dk_detail_0?psc=1&pd_rd_i=1572225505&pd_rd_w=CTrKS&content-id=amzn1.sym.8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_p=8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_r=XM7NYPJBYPENPXQQHT2P&pd_rd_wg=Ge6vN&pd_rd_r=dc08190a-4e88-4ffb-9f8c-9b0f876850d4&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw)
 
+### Books
+
+Beginners:
+
+- **Short Stories in Spanish for Beginners** by Olly Richards: This book features eight captivating stories in various genres that use controlled language and conversational dialogues. Each story comes with a glossary, a plot summary, and comprehension questions to aid learning.
+- **Spanish Stories/Cuentos Espanoles: A Dual-Language Book** by Angel Flores: This book contains 13 Spanish short stories presented side-by-side with their English translations. This format allows learners to compare the original Spanish text with the English version, making it suitable for intermediate-level students who want to build on their existing knowledge.
+- **The Whisper of the Sea: Bilingual Spanish-English Short Stories** by Pomme Bilingual: Written for adult language learners, this collection presents short stories in both Spanish and English. This dual-language format is ideal for enhancing language skills while enjoying the narrative.
+- **Tales from Chile: Bilingual Stories for Spanish Language Learners** by Coledown Bilingual Books: This book features 10 bilingual short stories set in Chile. It introduces learners to Chilean culture while teaching new vocabulary and sentence structures in both Spanish and English.
+
+Intermediate:
+
+- **Short Stories in Spanish for Intermediate Learners** by Olly Richards: The follow-up to the beginner's book, this collection offers more complex stories to help learners advance their vocabulary and conversational skills.
+- **Intermediate Spanish Short Stories: 10 Amazing Short Tales** by Touri Language Learning: This collection is designed to help intermediate learners grow their vocabulary with stories that include natural dialogues and everyday situations. It also provides vocabulary lists and chapter summaries.
+- **El león, la bruja y el ropero** (The Lion, the Witch, and the Wardrobe) by C.S. Lewis: A children's classic is a popular choice for intermediate learners because the story is familiar to most readers, making it easier to follow. The vocabulary is also relatively accessible. 
+
+Advanced:
+
+- **The Penguin Book of Spanish Short Stories** edited by Margaret Jull Costa: This collection features a range of Spanish short stories from the 19th century to the modern day. It is ideal for advanced students looking for authentic Spanish literature.
+- **Cien años de soledad (One Hundred Years of Solitude)** by Gabriel García Márquez: A monumental work of magical realism, this novel is an excellent choice for advanced learners who want to immerse themselves in complex and lyrical Spanish prose.
+- **Como agua para chocolate (Like Water for Chocolate)** by Laura Esquivel: This novel is also a great option for advanced learners. It blends romance, magic, and Mexican culture into a compelling and memorable story.
+- **Don Quijote de la Mancha** by Miguel de Cervantes: As one of the most famous and influential works of Spanish literature, this novel is best suited for advanced readers who have a strong command of the language.
+- **The House of the Spirits (La casa de los espíritus)** by Isabel Allende: A renowned work of Latin American literature, this novel is an immersive choice for advanced readers. 
 
 ## Survival Guide for Travel
 
