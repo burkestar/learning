@@ -37,15 +37,20 @@
 
 ### Youtube Channels and Podcasts
 
+- [Dreaming Spanish](https://www.youtube.com/DreamingSpanish)
+- [Easy Spanish](https://www.youtube.com/@EasySpanish) - Street interviews with subtitles in Spanish and English. Excellent for listening to natural conversation.
+- [Coffee Break Spanish](https://coffeebreaklanguages.com/coffeebreakspanish/)
 - [News in Slow Spanish](https://www.newsinslowspanish.com) - reads daily news stories at a slower pace so you can understand
 - [Butterfly Spanish](https://www.youtube.com/channel/UC9yudInUYzMh9H4gJs4DrHg)
-- [Dreaming Spanish](https://www.youtube.com/DreamingSpanish)
 - [Spanish Travel Course](https://www.youtube.com/watch?v=xUiKhcLaVKI)
 
 ### Resources and Tools
 
 - Google Translate - use the mobile app and bookmark for your browser
 - [ReadLang](https://readlang.com) for inline translation of Spanish stories in your browser
+- [Beelinguapp](https://beelinguapp.com): Articles, books and music with side-by-side translation and audio.
+- [LanguageReactor](https://www.languagereactor.com) - Watch Netflix and Youtube with dual translations
+- [LingQ](https://www.lingq.com/en/) - transform existing content you consume into language learning
 
 ### Vocabulary cards
 
