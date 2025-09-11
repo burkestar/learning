@@ -4,6 +4,8 @@ Curated notes and guides for rapidly learning various topics. The focus is on hi
 
 ## Topics
 
+- [Being a human](topics/human.md)
+
 ### Tech
 
 - [Laptop setup](topics/tech/laptop-setup.md)
@@ -24,7 +26,7 @@ Curated notes and guides for rapidly learning various topics. The focus is on hi
 - [Javascript](topics/tech/javascript.md)
 - [Rust](topics/tech/rust.md)
 
-### Spoken language
+### Human Language
 
 - [Spanish](topics/spanish.md)
 - French
