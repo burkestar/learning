@@ -73,13 +73,18 @@ Design goals:
         - Makefile Tools
         - YAML
         - Docker
+- [Claude Desktop](https://claude.ai/download)
 - [Xcode](https://developer.apple.com/xcode/)
 - [Docker Desktop](https://docs.docker.com/desktop/setup/install/mac-install/)
     - Configuration:
         - Disable auto-start on login I can launch only when needed
         - Enable Kubernetes
 - [DBeaver](https://dbeaver.io) for database GUI: `brew install --cask dbeaver-community`
-- [Claude Desktop](https://claude.ai/download)
+- [pgAdmin](https://www.pgadmin.org/download/) for Postgresql GUI
+- [Robo 3T](https://robomongo.org/) for Mongo GUI
+- [Postman](https://www.postman.com/) for API testing
+- [FreeLens](https://github.com/freelensapp/freelens) for k8s management `brew install --cask freelens`
+- [Figma Desktop](https://www.figma.com/downloads/) for UI mockups
 
 ### Tips
 
