@@ -97,38 +97,49 @@ Design goals:
 **.gitconfig**
 
 ```
-user.name=Dustin Burke
-user.email=<EMAIL>
-alias.up=!git pull --rebase --prune $@ && git submodule update --init --recursive
-alias.co=checkout
-alias.cob=checkout -b
-alias.cm=!git add -A && git commit -m
-alias.save=!git add -A && git commit -m 'SAVEPOINT'
-alias.wip=commit -am WIP
-alias.undo=reset HEAD~1 --mixed
-alias.amend=commit -a --amend
-alias.wipe=!git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
-alias.bclean=!f() { git checkout ${1-master} && git branch --merged ${1-master} | grep -v  ${1-master}$ | xargs git branch -d; }; f
-alias.bdone=!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f
-alias.migrate=!f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-$CURRENT@{u}} && git rebase --onto ${2-master} $CURRENT; }; f
-alias.lg=log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-alias.please=push --force-with-lease
-alias.commend=commit --amend --no-edit
-alias.st=status -sb -uall
-alias.grog=log --graph --abbrev-commit --decorate --all --format=format:"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)"
-alias.bonk=push --set-upstream origin HEAD
-alias.trim=!f() { git branch | grep -v '^\*' | xargs git branch -d; }; f
-alias.squash=!f() { git reset $(git merge-base ${1-master} $(git rev-parse --abbrev-ref HEAD)); }; f
-alias.branchdate=for-each-ref --count=10 --sort=-committerdate refs/heads/ --format=%(authordate:short)%09%(objectname:short)%09%1B[0;33m%(refname:short)%1B[m%09
-pull.rebase=true
-push.default=current
-push.autosetupremote=true
-filter.lfs.clean=git-lfs clean -- %f
-filter.lfs.smudge=git-lfs smudge -- %f
-filter.lfs.process=git-lfs filter-process
-filter.lfs.required=true
-credential.helper=store --file ~/git.credentials
-init.defaultbranch=main
+[user]
+        name = Dustin Burke
+        email = <EMAIL>
+
+[alias]
+        up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+        co = checkout
+        cob = checkout -b
+        cm = !git add -A && git commit -m
+        save = !git add -A && git commit -m 'SAVEPOINT'
+        wip = commit -am WIP
+        undo = reset HEAD~1 --mixed
+        amend = commit -a --amend
+        wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+        bclean = !f() { git checkout ${1-master} && git branch --merged ${1-master} | grep -v  ${1-master}$ | xargs git branch -d; }; f
+        bdone = !f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f
+        migrate = !f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-$CURRENT@{u}} && git rebase --onto ${2-master} $CURRENT; }; f
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        please = push --force-with-lease
+        commend = commit --amend --no-edit
+        st = status -sb -uall
+        grog = log --graph --abbrev-commit --decorate --all --format=format:"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)"
+        bonk = push --set-upstream origin HEAD
+        #trim = !f() { git branch | grep -v '^\*' | xargs git branch -d; }; f
+        #squash = !f() { git reset $(git merge-base ${1-master} $(git rev-parse --abbrev-ref HEAD)); }; f
+        branchdate = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format=%(authordate:short)%09%(objectname:short)%09%1B[0;33m%(refname:short)%1B[m%09
+
+[pull]
+        rebase=true
+        default=current
+        autosetupremote=true
+
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+
+[credential]
+        helper = store --file ~/git.credentials
+
+[init]
+        defaultbranch = main
 ```
 
 **Fast terminal startup**
