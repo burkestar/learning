@@ -53,6 +53,11 @@ Design goals:
     - Configure [Nerd Font](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#fonts) automatically for `MesloLGS NF`.
     - Enable Instant Prompt
 - Git: `brew install git`
+- Configure Git:
+```
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+```
 - [Golang](https://go.dev): `brew install go`
 - [uv](https://docs.astral.sh/uv/) for python virtualenv management: `brew install uv`
 - [Sublime Text](https://www.sublimetext.com) as a very fast text editor. Mostly for basic text editing of YAML and config, not programming.
