@@ -24,13 +24,12 @@ Design goals:
 
 ## Software
 
-- Safari as primary web browser
+- Chrome as primary web browser
     - Bookmarks: Gmail, Google Calendar and Tasks.
     - Plugins: 1password
     - Enable Developer Tools
     - Disable Password auto-fill (use 1password for this)
 - [1password](https://1password.com/downloads/mac) app for managing passwords, passkeys and secrets across devices
-- [Spotify](https://www.spotify.com/us/download/mac/) for music
 - [Stats](https://mac-stats.com) app for system stats. CPU %, RAM %, Battery showing time to discharge and %.
 - [Rectangle](https://rectangleapp.com) app for keyboard shortcuts to move and resize windows. 
     - CTRL ˄ OPTION ⌥ RETURN ⏎ to maximize window
@@ -49,6 +48,7 @@ Design goals:
 - Shell: Zsh
 - Terminal: [iTerm2](https://iterm2.com)
     - Configure iTerm2 → Preferences → Profiles → Text and set Font to `MesloLGS NF` after installing p10k prompt
+- Nerd Font for terminal: `brew install --cask font-meslo-lg-nerd-font`
 - Prompt: [powerlevel10k](https://github.com/romkatv/powerlevel10k): `brew install powerlevel10k`
     - Configure [Nerd Font](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#fonts) automatically for `MesloLGS NF`.
     - Enable Instant Prompt
