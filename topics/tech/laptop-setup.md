@@ -81,7 +81,7 @@ Design goals:
         - Enable Kubernetes
 - [DBeaver](https://dbeaver.io) for database GUI: `brew install --cask dbeaver-community`
 - [pgAdmin](https://www.pgadmin.org/download/) for Postgresql GUI
-- [Robo 3T](https://robomongo.org/) for Mongo GUI
+- [Mongo Atlas](https://www.mongodb.com/try/download/compass)
 - [Postman](https://www.postman.com/) for API testing
 - [FreeLens](https://github.com/freelensapp/freelens) for k8s management `brew install --cask freelens`
 - [Figma Desktop](https://www.figma.com/downloads/) for UI mockups
