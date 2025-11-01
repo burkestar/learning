@@ -160,6 +160,21 @@ Edit `~/.zshrc` to comment out everything except what's critical.
 
 When installing powerlevel10k, enable "instant prompt".
 
+**Use Touch ID for sudo in terminal**
+
+Copy the template:
+
+```bash
+sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+```
+
+And edit `/etc/pam.d/sudo_local` to uncomment the `pam_tid.so` line so that the Pluggable Auth Module (PAM) for Touch ID (tid) is enabled:
+
+```
+# sudo_local: local config file which survives system update and is included for sudo
+# uncomment following line to enable Touch ID for sudo
+auth       sufficient     pam_tid.so
+```
 
 **Organizing code**
 
