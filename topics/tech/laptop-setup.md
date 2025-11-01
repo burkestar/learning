@@ -176,6 +176,45 @@ And edit `/etc/pam.d/sudo_local` to uncomment the `pam_tid.so` line so that the 
 auth       sufficient     pam_tid.so
 ```
 
+**Vim plugin and color scheme**
+
+Install [vim-plug](https://github.com/junegunn/vim-plug)
+
+```sh
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+Edit `~/.vimrc`:
+```
+if !has("gui_running")
+    set background=dark
+endif
+set autoindent
+set expandtab
+set shiftwidth=8
+set showmatch
+set smarttab
+set tabstop=8
+syntax on
+filetype on
+set hlsearch
+set updatetime=1000
+
+call plug#begin()
+
+" List your plugins here
+Plug 'tpope/vim-sensible'
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+```
+
+Then run `:PlugInstall` command in vim.
+
+Add `autocmd vimenter * ++nested colorscheme gruvbox` line to end of `.vimrc` and restart.
+
+
 **Organizing code**
 
 ```text
