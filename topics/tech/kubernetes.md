@@ -824,4 +824,5 @@ Tilt supports Helm but does not require it, and it works with k8s API directly. 
     - [Certified Kubernetes Application Developer (CKAD) Prep Course](https://oreil.ly/MFAjT) is a video-based Learning Path on the O’Reilly Learning Platform
         
     - [Certified Kubernetes Application Developer (CKAD) Cert Prep: Exam Tips](https://oreil.ly/MPofV) is a video-based course on LinkedIn Learning that focuses exclusively on exam preparation.
-        
+
+    - [Killercoda](https://killercoda.com/) interactive environments in your browser, geared towards learning and certifications
