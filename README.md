@@ -5,6 +5,8 @@ Curated notes and guides for rapidly learning various topics. The focus is on hi
 ## Topics
 
 - [Being a human](topics/human.md)
+- [Guitar](topics/guitar.md)
+- [Gardening](topics/gardening.md)
 
 ### Tech
 
