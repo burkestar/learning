@@ -24,6 +24,7 @@ Curated notes and guides for rapidly learning various topics. The focus is on hi
 - [Python](topics/tech/python.md)
 - [Golang](topics/tech/golang.md)
 - [Javascript](topics/tech/javascript.md)
+- [Typescript](topics/tech/typescript.md)
 - [Rust](topics/tech/rust.md)
 
 ### Human Language
