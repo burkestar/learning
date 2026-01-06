@@ -7,6 +7,7 @@ Typescript adds static typing with optional type annotations to Javascript.  Typ
 * **[The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html):** This is the definitive manual. If you already know JavaScript, start with the **"TypeScript for JavaScript Programmers"** guide.
 * **[The TypeScript Playground](https://www.typescriptlang.org/play):** An essential browser-based editor that shows you exactly how your TS code transpiles to JS in real-time. It’s perfect for testing complex types.
 * **[TSConfig Reference](https://www.typescriptlang.org/tsconfig):** Authoritative documentation on how to configure your project. Understanding `strict: true` and `target` settings is vital for professional work.
+* **[Concise Typescript Book](https://github.com/gibbok/typescript-book?tab=readme-ov-file):**
 
 ## Video
 
