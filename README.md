@@ -6,6 +6,7 @@ Curated notes and guides for rapidly learning various topics. The focus is on hi
 
 - [Being a human](topics/human.md)
 - [Guitar](topics/guitar.md)
+- [Music](topics/music.md)
 - [Gardening](topics/gardening.md)
 
 ### Tech
