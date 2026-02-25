@@ -44,7 +44,7 @@ Design goals:
 
 ### Developer tools
 
-- [Homebrew](https://brew.sh) for install software
+- [Homebrew](https://brew.sh) for installing software
 - Shell: Zsh
 - Terminal: [iTerm2](https://iterm2.com)
     - Configure iTerm2 → Preferences → Profiles → Text and set Font to `MesloLGS NF` after installing p10k prompt
@@ -57,7 +57,8 @@ Design goals:
 - [Setup SSH key for Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and add to ssh-agent
 - [Golang](https://go.dev): `brew install go`
 - [uv](https://docs.astral.sh/uv/) for python virtualenv management: `brew install uv`
-- [Sublime Text](https://www.sublimetext.com) as a very fast text editor. Mostly for basic text editing of YAML and config, not programming.
+- [Claude Code](https://code.claude.com/docs/en/overview) for AI coding assistance from the terminal.
+- [Claude Desktop](https://claude.ai/download) for chat - research, Q&A, collaborative document writing
 - [Cursor](https://cursor.com/home) as AI IDE, alternative to VS Code.
     - Configuration:
         - Cursor Settings > Models > Anthropic API key
@@ -73,17 +74,17 @@ Design goals:
         - Makefile Tools
         - YAML
         - Docker
-- [Claude Desktop](https://claude.ai/download)
+- [Sublime Text](https://www.sublimetext.com) as a very fast text editor. Mostly for basic text editing of YAML and config, not programming.
 - [Xcode](https://developer.apple.com/xcode/)
 - [Docker Desktop](https://docs.docker.com/desktop/setup/install/mac-install/)
     - Configuration:
         - Disable auto-start on login I can launch only when needed
         - Enable Kubernetes
-- [DBeaver](https://dbeaver.io) for database GUI: `brew install --cask dbeaver-community`
-- [pgAdmin](https://www.pgadmin.org/download/) for Postgresql GUI
-- [Mongo Atlas](https://www.mongodb.com/try/download/compass)
 - [Postman](https://www.postman.com/) for API testing
 - [FreeLens](https://github.com/freelensapp/freelens) for k8s management `brew install --cask freelens`
+- [pgAdmin](https://www.pgadmin.org/download/) for Postgresql GUI
+- [Mongo Atlas](https://www.mongodb.com/try/download/compass)
+- [DBeaver](https://dbeaver.io) for database GUI: `brew install --cask dbeaver-community`
 - [Figma Desktop](https://www.figma.com/downloads/) for UI mockups
 
 ### Tips
@@ -230,3 +231,101 @@ Add `autocmd vimenter * ++nested colorscheme gruvbox` line to end of `.vimrc` an
 - Spotlight search for Applications, Developer, Documents, Folders and System Settings only.  Less to index, faster performance, better results.
 - Disable notifications for most things.
 - Location services off
+
+### Agentic coding
+
+Copy [AGENTS.md](AGENTS.md) to `~/.claude/CLAUDE.md`.
+
+`~/.claude/settings.json`:
+```json
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+
+      "Read",
+      "Write",
+      "Edit",
+      "MultiEdit",
+      "Glob",
+      "Grep",
+      "LS",
+
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "Bash(pip *)",
+      "Bash(pip3 *)",
+      "Bash(uv *)",
+      "Bash(poetry *)",
+      "Bash(pytest *)",
+      "Bash(ruff *)",
+      "Bash(black *)",
+      "Bash(mypy *)",
+      "Bash(flake8 *)",
+      "Bash(isort *)",
+      "Bash(pre-commit *)",
+
+      "Bash(git status)",
+      "Bash(git log *)",
+      "Bash(git diff *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git checkout *)",
+      "Bash(git branch *)",
+      "Bash(git stash *)",
+      "Bash(git pull *)",
+      "Bash(git fetch *)",
+      "Bash(git show *)",
+
+      "Bash(cat *)",
+      "Bash(ls *)",
+      "Bash(find *)",
+      "Bash(grep *)",
+      "Bash(echo *)",
+      "Bash(pwd)",
+      "Bash(which *)",
+      "Bash(env)",
+      "Bash(printenv *)",
+      "Bash(jq *)",
+
+      "Bash(docker ps *)",
+      "Bash(docker logs *)",
+      "Bash(docker build *)",
+      "Bash(docker-compose up *)",
+      "Bash(docker-compose down *)",
+
+      "Bash(make *)"
+    ],
+    "deny": [
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/secrets/**)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)",
+
+      "Bash(rm *)",
+      "Bash(rmdir *)",
+      "Bash(sudo *)",
+      "Bash(su *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(ssh *)",
+      "Bash(scp *)",
+      "Bash(git push *)",
+      "Bash(git rebase *)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean *)",
+      "Bash(chmod *)",
+      "Bash(chown *)",
+      "Bash(kill *)",
+      "Bash(pkill *)"
+    ]
+  },
+  "env": {
+    "BASH_DEFAULT_TIMEOUT_MS": "30000"
+  }
+}
+```
+
