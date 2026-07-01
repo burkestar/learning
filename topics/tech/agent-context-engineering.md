@@ -29,7 +29,43 @@
 - GraphRAG
 - Semantic Layer
 
-## Literature review
+## Frameworks
+
+- [mem0](https://docs.mem0.ai/platform/overview) 
+- [supermemory](https://supermemory.ai/) 
+	- Claims to be #1 in memory benchmarks (not verified)
+	- Implemented in Typescript with wrappers for various frameworks, most use an SDK client and API
+	- Claude plugin with hooks to manage memories
+	- Organizes memories by project
+	- Core engine is closed source, only SDKs are open source
+	-  Not clear if using GraphRAG and graph database
+- [membase](https://docs.membase.so/getting-started/quickstart)
+- [graphlit](https://www.graphlit.com/)
+- [zep](https://help.getzep.com/graph-overview) (Graphiti)
+	- designed for dynamic and frequently updated datasets with continuous data updates, temporal fact tracking, and sub-200ms query latency
+- [Hindsight](https://docs.hindsight.vectorize.io/)
+- [mem9](https://mem9.ai/)
+- [kumiho](https://kumiho.io/en/use-cases/ai-cognitive-memory)
+- [memora](https://www.memora.sh/)
+	- Sub-50ms recall
+- [cognee](https://docs.cognee.ai/)
+- Framework native
+	- [crewai memory](https://docs.crewai.com/v1.15.1/en/concepts/memory)
+	- [llamaindex memory](https://developers.llamaindex.ai/python/framework/module_guides/deploying/agents/memory/)
+	- Anthropic [Managing Context on Claude Developer Platform](https://claude.com/blog/context-management)
+	- [OpenAI Agent Memory SDK](https://openai.github.io/openai-agents-python/sandbox/memory/)
+
+## Benchmarks
+- [MemoryBench](https://supermemory.ai/docs/memorybench/overview)
+- [LongMemEval](https://github.com/xiaowu0162/LongMemEval)
+- [Locomo](https://github.com/snap-research/locomo) 
+- [Convomem](https://github.com/SalesforceAIResearch/ConvoMem)
+- https://arxiv.org/abs/2510.27246
+- https://arxiv.org/abs/2504.19413
+
+## Research Notes
+
+### Articles
 
 - [Components of a Coding Agent](https://magazine.sebastianraschka.com/p/components-of-a-coding-agent) 
 	- repo navigation, search, function lookup, diff application, test execution, error inspection, and keeping all the relevant information in context
@@ -95,39 +131,9 @@
 			- Citations and provenance.
 			- Durable APIs for many agents and applications.
 
-## Frameworks
+### Videos
 
-- [mem0](https://docs.mem0.ai/platform/overview) 
-- [supermemory](https://supermemory.ai/) 
-	- Claims to be #1 in memory benchmarks (not verified)
-	- Implemented in Typescript with wrappers for various frameworks, most use an SDK client and API
-	- Claude plugin with hooks to manage memories
-	- Organizes memories by project
-	- Core engine is closed source, only SDKs are open source
-	-  Not clear if using GraphRAG and graph database
-- [membase](https://docs.membase.so/getting-started/quickstart)
-- [graphlit](https://www.graphlit.com/)
-- [zep](https://help.getzep.com/graph-overview) (Graphiti)
-	- designed for dynamic and frequently updated datasets with continuous data updates, temporal fact tracking, and sub-200ms query latency
-- [Hindsight](https://docs.hindsight.vectorize.io/)
-- [mem9](https://mem9.ai/)
-- [kumiho](https://kumiho.io/en/use-cases/ai-cognitive-memory)
-- [memora](https://www.memora.sh/)
-	- Sub-50ms recall
-- [cognee](https://docs.cognee.ai/)
-- Framework native
-	- [crewai memory](https://docs.crewai.com/v1.15.1/en/concepts/memory)
-	- [llamaindex memory](https://developers.llamaindex.ai/python/framework/module_guides/deploying/agents/memory/)
-	- Anthropic [Managing Context on Claude Developer Platform](https://claude.com/blog/context-management)
-	- [OpenAI Agent Memory SDK](https://openai.github.io/openai-agents-python/sandbox/memory/)
-
-## Benchmarks
-- [MemoryBench](https://supermemory.ai/docs/memorybench/overview)
-- [LongMemEval](https://github.com/xiaowu0162/LongMemEval)
-- [Locomo](https://github.com/snap-research/locomo) 
-- [Convomem](https://github.com/SalesforceAIResearch/ConvoMem)
-- https://arxiv.org/abs/2510.27246
-- https://arxiv.org/abs/2504.19413
+- [Context Engineering for Agents](https://www.youtube.com/watch?v=4GiqzUHD5AA) Langchain 2025 July
 
 ## Notes
 
@@ -188,11 +194,5 @@
 		- **Tools** — indexed by activity + location: which tools are relevant/available given current task and working directory (e.g., git tools only matter if location = repo)
 		- **Prompts/instructions** — indexed by identity + activity: system prompt = identity-level (stable), task prompt = activity-level (per-turn)
 		- **Code/file state** — indexed by location: file contents, diffs, test results
-- Agent Memory Frameworks
-	- - **Mem0** — managed personalization memory, multi-store (vector + graph + KV), scoped by user/session/agent supports user-level, session-level, and agent-level memory scopes so one agent can maintain separate context for different users without cross-contamination [DEV Community](https://dev.to/thedailyagent/top-6-ai-agent-memory-frameworks-for-devs-2026-1fef)
-	- **Zep/Graphiti** — temporal knowledge graph; stores every fact as a graph node with a validity window rather than a flat string [Atlan](https://atlan.com/know/best-ai-agent-memory-frameworks-2026/)
-	- **Letta** — OS-inspired virtual context management, moves info between context tiers implementing a virtual context management system that intelligently moves information between tiers [MachineLearningMastery](https://machinelearningmastery.com/the-6-best-ai-agent-memory-frameworks-you-should-try-in-2026/)
-	- **LangMem/LangGraph** — flat key-value items with vector search, scoped by configurable namespaces (user, team, app route), tightly coupled to LangGraph
 - Challenges
 	- Access control (ACL hydration) to track across systems
-	- 
