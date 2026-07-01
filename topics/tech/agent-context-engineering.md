@@ -134,6 +134,10 @@
 ### Videos
 
 - [Context Engineering for Agents](https://www.youtube.com/watch?v=4GiqzUHD5AA) Langchain 2025 July
+	- Writing context means saving it outside the context window to help an agent perform a task.
+	- Selecting context means pulling it into the context window to help an agent perform a task.
+	- Compressing context involves retaining only the tokens required to perform a task.
+	- Isolating context involves splitting it up to help an agent perform a task.
 
 ## Notes
 
