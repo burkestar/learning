@@ -138,6 +138,34 @@
 	- Selecting context means pulling it into the context window to help an agent perform a task.
 	- Compressing context involves retaining only the tokens required to perform a task.
 	- Isolating context involves splitting it up to help an agent perform a task.
+- [Scaling AI at Netflix](https://www.youtube.com/watch?v=N91ANP_AvxY)
+	- GenAI - "Provide exceptional tools for Netflix teams to build things powered by AI"
+	- Horizontal vs team specific
+	- Opinionated on capabilities, flexible on means
+	- composable building blocks that can be switched out over time
+	- Build infra that keeps pace with frontier models
+	- Platform fundamentals
+		- Identity - permissions and workflows for agents - get close to Security and GRC teams
+		- Resilience - rate limiting and workflow management
+		- observability - out of box distributed tracing and cost tracking
+		- DevEx - latency, iteration speed, code-first interfaces
+	- Braintrust for evals - encode preferences for how agents _should_ perform
+	- Compounding ecosystem - evals <> context <> reliable tools
+	- Context-Delivery-as-a-Service
+	- Claude Code paved road assistant
+	- Utilization and sentiment as guiding metrics
+	- Claude Code hook to load Dev Profile at startup
+	- Spring Boot Nebula
+	- Context Engineering - Empower engineers with world-class, Netflix-aware GenAI tools at every touchpoint of the development lifecycle
+	- Context Provider as MCP server - Agentic RAG, MCP prompts
+	- Ragas for evals: https://docs.ragas.io/en/stable/
+		- Single turn: Search ranking, response accuracy
+		- Multi turn: Conversation Efficiency, code diff quality
+	- Single vs multiple turn performance
+	- Develocity: https://gradle.com/develocity/
+	- Developer training, champions to spread ideas and practices
+	- Sensemaking to understand what people are doing with the AI tooling
+
 
 ## Notes
 
