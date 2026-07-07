@@ -49,13 +49,20 @@ What gets federated:
 
 ### Tools
 
+Orchestration:
+
 - **[Karmada](https://karmada.io/)** - k8s native to deploy workloads across k8s clusters and clouds, providing centralized multi-cloud management, high availability, failure recovery, and traffic scheduling; open source (Apache 2), CNCF incubating
 - **[Open Cluster Management (OCM)](https://open-cluster-management.io/)** — manages cluster inventory, work distribution, workload placement across multiple k8s clusters; open source (Apache 2), CNCF sandbox
 - **[Armada](https://armadaproject.io/)** - multi-Kubernetes cluster batch job meta-scheduler designed to handle massive-scale workloads; open source (Apache 2), CNCF sandbox
-- **[Submariner](https://submariner.io/)** - a tool built to connect overlay networks of different Kubernetes clusters, designed to be network plugin (CNI) agnostic and supports both encrypted and non-encrypted tunnels between the connected clusters; open source (Apache 2)
 - **[KubeFleet](https://kubefleet.dev/)** — schedule workloads intelligently, roll out changes progressively, and perform administrative tasks easily, across a group of Kubernetes clusters in any location; open source (Apache 2), CNCF sandbox
 - **[Kueue](https://kueue.sigs.k8s.io/)** - k8s native job queueing, manage quotas and resource sharing for batch, HPC, and AI/ML workloads; open source (Apache 2)
 - **[Nova](https://github.com/elotl/try-nova)** — policy-driven multi-cluster control plane that allows you to treat a fleet of Kubernetes clusters as a single logical compute fabric, automatically placing workloads on workload clusters based on user-defined policies; open source (Apache 2) but looks like it will go opencore with a vendor
+
+Networking:
+- **[Submariner](https://submariner.io/)** - a tool built to connect overlay networks of different Kubernetes clusters, designed to be network plugin (CNI) agnostic and supports both encrypted and non-encrypted tunnels between the connected clusters; open source (Apache 2)
+- **[Cilium Cluster Mesh](https://cilium.io/use-cases/cluster-mesh/)** -  allows you to connect the networks of multiple clusters in such as way that pods in each cluster can discover and access services in all other clusters of the mesh, provided all the clusters run Cilium as their CNI. This allows effectively joining multiple clusters into a large unified network, regardless of the Kubernetes distribution or location each of them is running; open source
+
+CI/CD:
 - **ArgoCD** - GitOps tooling for deploying workloads to clusters
 - **Flux** - GitOps tooling for deploying workloads to clusters
 
