@@ -15,6 +15,10 @@ Curated notes and guides for rapidly learning various topics. The focus is on hi
 - [Tools I use](topics/tech/tools.md)
 - [Electronics](topics/tech/electronics.md)
 - [Kubernetes](topics/tech/kubernetes.md)
+    - [Multi-cluster Kubernetes](topics/tech/kubernetes-multi-cluster.md) for fleet management and federated compute orchestration
+- AI
+    - [Agents.md](topics/tech/AGENTS.md)
+    - [Agent Context Engineering](topics/tech/agent-context-engineering.md)
 - [AWS](topics/tech/aws.md)
     - [AWS VPC](topics/tech/aws-vpc.md)
     - [AWS IAM](topics/tech/aws-iam.md)
