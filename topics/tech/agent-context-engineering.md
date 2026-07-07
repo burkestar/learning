@@ -31,6 +31,7 @@
 
 ## Frameworks
 
+- [OpenMetadata](https://github.com/open-metadata/OpenMetadata)
 - [mem0](https://docs.mem0.ai/platform/overview) 
 - [supermemory](https://supermemory.ai/) 
 	- Claims to be #1 in memory benchmarks (not verified)
