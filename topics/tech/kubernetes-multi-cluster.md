@@ -26,9 +26,10 @@ Automating the lifecycle for multiple clusters.  Provisioning, upgrading and con
 - **[Sveltos](https://projectsveltos.io/latest/)** - lightweight policy/config management across cluster fleets; open source (Apache 2)
 - **[Rancher](https://rancher.com/docs/)** - centralized multi-cluster lifecycle management; open source (Apache 2), vendor backed for Enterprise support
 - **[kOrdent](https://github.com/k0rdent/kcm)**
+- **[Clusternet](https://clusternet.io/)** - open source (Apache 2), CNCF sandbox
 - Commercial
 	- **Platform9** - hosts control plane, manages clusters on infra you own
-	- - **[Red Hat Advanced Cluster Management (RHACM)](https://docs.redhat.com/en/documentation/red_hat_advanced_cluster_management_for_kubernetes/2.0/html/about/welcome-to-red-hat-advanced-cluster-management-for-kubernetes)** - governance + lifecycle, enterprise-grade
+	- **[Red Hat Advanced Cluster Management (RHACM)](https://docs.redhat.com/en/documentation/red_hat_advanced_cluster_management_for_kubernetes/2.0/html/about/welcome-to-red-hat-advanced-cluster-management-for-kubernetes)** - governance + lifecycle, enterprise-grade
 
 ---
 
