@@ -57,6 +57,7 @@ Orchestration:
 - **[Armada](https://armadaproject.io/)** - multi-Kubernetes cluster batch job meta-scheduler designed to handle massive-scale workloads; open source (Apache 2), CNCF sandbox
 - **[KubeFleet](https://kubefleet.dev/)** — schedule workloads intelligently, roll out changes progressively, and perform administrative tasks easily, across a group of Kubernetes clusters in any location; open source (Apache 2), CNCF sandbox
 - **[Kueue](https://kueue.sigs.k8s.io/)** - k8s native job queueing, manage quotas and resource sharing for batch, HPC, and AI/ML workloads; open source (Apache 2)
+- **[Volcano](https://volcano.sh/)** - k8s native batch scheduling; open source (Apache 2), CNCF Incubating
 - **[Nova](https://github.com/elotl/try-nova)** — policy-driven multi-cluster control plane that allows you to treat a fleet of Kubernetes clusters as a single logical compute fabric, automatically placing workloads on workload clusters based on user-defined policies; open source (Apache 2) but looks like it will go opencore with a vendor
 
 Networking:
