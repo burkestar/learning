@@ -25,6 +25,7 @@ Automating the lifecycle for multiple clusters.  Provisioning, upgrading and con
 - **[Crossplane](https://www.crossplane.io/)** - infra-as-code control plane, provisions clusters + cloud resources declaratively; open source (Apache 2)
 - **[Sveltos](https://projectsveltos.io/latest/)** - lightweight policy/config management across cluster fleets; open source (Apache 2)
 - **[Rancher](https://rancher.com/docs/)** - centralized multi-cluster lifecycle management; open source (Apache 2), vendor backed for Enterprise support
+- **[kOrdent](https://github.com/k0rdent/kcm)**
 - Commercial
 	- **Platform9** - hosts control plane, manages clusters on infra you own
 	- - **[Red Hat Advanced Cluster Management (RHACM)](https://docs.redhat.com/en/documentation/red_hat_advanced_cluster_management_for_kubernetes/2.0/html/about/welcome-to-red-hat-advanced-cluster-management-for-kubernetes)** - governance + lifecycle, enterprise-grade
@@ -53,6 +54,7 @@ What gets federated:
 - **[Armada](https://armadaproject.io/)** - multi-Kubernetes cluster batch job meta-scheduler designed to handle massive-scale workloads; open source (Apache 2), CNCF sandbox
 - **[Submariner](https://submariner.io/)** - a tool built to connect overlay networks of different Kubernetes clusters, designed to be network plugin (CNI) agnostic and supports both encrypted and non-encrypted tunnels between the connected clusters; open source (Apache 2)
 - **[KubeFleet](https://kubefleet.dev/)** — schedule workloads intelligently, roll out changes progressively, and perform administrative tasks easily, across a group of Kubernetes clusters in any location; open source (Apache 2), CNCF sandbox
+- **[Kueue](https://kueue.sigs.k8s.io/)** - k8s native job queueing, manage quotas and resource sharing for batch, HPC, and AI/ML workloads; open source (Apache 2)
 - **[Nova](https://github.com/elotl/try-nova)** — policy-driven multi-cluster control plane that allows you to treat a fleet of Kubernetes clusters as a single logical compute fabric, automatically placing workloads on workload clusters based on user-defined policies; open source (Apache 2) but looks like it will go opencore with a vendor
 - **ArgoCD** - GitOps tooling for deploying workloads to clusters
 - **Flux** - GitOps tooling for deploying workloads to clusters
