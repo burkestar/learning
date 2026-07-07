@@ -56,6 +56,12 @@ What gets federated:
 - **ArgoCD** - GitOps tooling for deploying workloads to clusters
 - **Flux** - GitOps tooling for deploying workloads to clusters
 
+### Notes
+
+- Gang scheduling means all-or-nothing scheduling — a job's pods only start if all required pods can be placed simultaneously; otherwise none start (avoids partial-start deadlocks in distributed training)
+- Cross-cluster gang scheduling is immature — most tools do this well within one cluster; multi-cluster gang scheduling is still an edge case, not a solved standard
+- Cross-cluster federation tools (Karmada, OCM) handle "which cluster gets this job" — gang scheduling then happens within that cluster via Volcano/Kueue
+
 ---
 
 ## Standards and Specs
@@ -68,3 +74,15 @@ What gets federated:
 	- **[Kubernetes Enhancement Proposals (KEP)](https://github.com/kubernetes/enhancements/tree/master/keps/sig-multicluster)**
 - **[Gateway API](https://gateway-api.sigs.k8s.io/)** for traffic management (north/south and east/west with emerging **[GAMMA](https://gateway-api.sigs.k8s.io/docs/mesh/gamma/)** spec for service mesh)
 - **[CNCF Landscape for Orchestration and Management](https://landscape.cncf.io/guide#orchestration-management)** for open source projects under Cloud Native Computing Foundation's (CNCF) governance
+
+---
+
+## Trends
+
+- **"Fleet as unit of design"** — teams stop managing clusters individually; they define one GitOps contract/policy set applied across all clusters via CAPI + Karmada/OCM Fleet and cluster API integration will make _"many clusters, one contract"_ a standard pattern
+- **GitOps consolidation** — Argo CD/Flux remain dominant, but focus shifts from "which tool" to running them at fleet scale: OCI-native chart distribution, progressive delivery (canary/blue-green) built in, multi-cluster consistency by default
+- **OCI as default artifact format** — Helm charts/artifacts move to OCI registries as primary distribution path (old chart repos coexist but aren't primary)
+- **AI/GPU workloads as first-class multi-cluster citizens** — gang-scheduling (Volcano), quota management (Kueue) now factor into cross-cluster placement decisions, not just single-cluster scheduling
+- **Cost optimization becomes a platform responsibility** — baked into platform contracts via policy engines (Gatekeeper/Kyverno), not an afterthought; enforced across the fleet uniformly
+- **Zero-trust/security policy fleet-wide** — image signing (Sigstore/Cosign), eBPF runtime security (Falco/Tetragon) expected consistently across all clusters, not per-cluster config
+- **Gateway API replacing Ingress** — driven by Ingress-NGINX deprecation; migration tooling exists to translate old Ingress → Gateway/HTTPRoute in parallel during transition
