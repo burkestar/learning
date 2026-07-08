@@ -26,6 +26,7 @@ Automating the lifecycle for multiple clusters.  Provisioning, upgrading and con
 - **[Sveltos](https://projectsveltos.io/latest/)** - lightweight policy/config management across cluster fleets; open source (Apache 2)
 - **[Rancher](https://rancher.com/docs/)** - centralized multi-cluster lifecycle management; open source (Apache 2), vendor backed for Enterprise support
 - **[kOrdent](https://github.com/k0rdent/kcm)**
+- **[k0smotron](https://k0smotron.io/)** - ClusterAPI implementation for managing multiple [k0s](https://k0sproject.io/) clusters
 - **[Clusternet](https://clusternet.io/)** - open source (Apache 2), CNCF sandbox
 - Commercial
 	- **Platform9** - hosts control plane, manages clusters on infra you own
