@@ -82,6 +82,19 @@
 
 ---
 
+## Adoption within industry
+
+**Bottom line:** for oil & gas, **K3s** is the proven choice (ZEDEDA, Portainer, Rancher all target it there). For military/DoD tactical edge, **RKE2** is the compliance-certified answer, often paired with K3s on the smallest nodes.
+
+- **K3s** - the most widely deployed in practice. Rancher/SUSE market it explicitly for "unattended, resource-constrained, remote" sites; vendors like **ZEDEDA** and **Portainer** specifically cite oil rig / SCADA deployments (running alongside legacy Ignition/OT apps) as a target use case. Has official air-gap install support (image tarballs, no internet needed).
+- **RKE2** - the one actually *certified* for U.S. defense. It's the only **DISA STIG-validated** Kubernetes distro for DoD/Intelligence Community use, FIPS-enabled (BoringCrypto), SELinux-supported, and used in **Platform One's Big Bang** (DoD's hardened K8s platform). Rancher Government Solutions builds tooling (e.g., "Hauler") specifically for secure air-gapped transfer to tactical sites. This is the default choice when "military" means actual DoD compliance requirements, not just "rugged hardware."
+- **K3s + RKE2 together** is the common real pattern: **K3s for lightweight/constrained nodes** (sensors, small gateways, drones), **RKE2 for beefier tactical edge servers** running more complex workloads - both under Rancher's Fleet Manager for GitOps-style fleet management across thousands of disconnected sites.
+- **KubeEdge** - used in industrial/telecom edge autonomy scenarios (its origin is Huawei/China telecom + industrial IoT), strong offline device-twin story, but I found no evidence of it in Western defense or major oil & gas deployments - likely provenance/trust concerns for those sectors.
+- **OpenYurt / MicroK8s** - no notable evidence of use in defense or oil & gas specifically. MicroK8s' snapd dependency and auto-update behavior work against it in locked-down/offline environments unless carefully pinned.
+- **Drones specifically** - no named production case study surfaced (this space is less publicly documented, likely for OPSEC reasons), but architecturally K3s is the natural fit given its footprint (single binary, works offline, ARM-friendly) - it shows up repeatedly in edge/fog-computing UAV research literature as the reference lightweight orchestrator.
+
+---
+
 ## Sources
 
 - [K3s Requirements](https://docs.k3s.io/installation/requirements)
@@ -95,4 +108,10 @@
 - [KubeEdge Prerequisites](https://kubeedge.io/docs/category/prerequisites/)
 - [Alibaba Cloud: OpenYurt - Extending Native Kubernetes to the Edge](https://www.alibabacloud.com/blog/openyurt-the-practice-of-extending-native-kubernetes-to-the-edge_597903)
 - [Titan Wolf: k3s vs OpenYurt vs KubeEdge](https://blog.titanwolf.in/a?ID=023af8dd-d453-46f1-8527-5a8ff28f1d4e)
-
+- [ZEDEDA - Kubernetes at the edge](https://zededa.com/blog/effortlessly-scale-kubernetes-at-the-edge/)
+- [Rancher K3s for edge/IoT](https://www.rancher.com/products/k3s)
+- [SUSE K3s](https://www.suse.com/products/k3s/)
+- [Rancher Government RKE2](https://ranchergovernment.com/products/rke2)
+- [DISA validates RKE2 STIG](https://intelligencecommunitynews.com/disa-validates-rancher-government-solutions-stig-for-rke2/)
+- [AWS: Deploying RKE2 at the Edge](https://docs.aws.amazon.com/solutions/deploying-rancher-rke2-at-the-edge-on-aws/)
+- [K3s Air-Gap Install docs](https://docs.k3s.io/installation/airgap)
