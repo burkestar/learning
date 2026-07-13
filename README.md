@@ -16,7 +16,7 @@ Curated notes and guides for rapidly learning various topics. The focus is on hi
 - [Electronics](topics/tech/electronics.md)
 - [Kubernetes](topics/tech/kubernetes.md)
     - [Multi-cluster Kubernetes](topics/tech/kubernetes-multi-cluster.md) for fleet management and federated compute orchestration
-    - [Micro Kubernetes Distributions for Edge Deployments](topics/tech/kubernetes-micro-k8s.md)]
+    - [Micro Kubernetes Distributions for Edge Deployments](topics/tech/kubernetes-micro-k8s.md)
 - AI
     - [Agents.md](topics/tech/AGENTS.md)
     - [Agent Context Engineering](topics/tech/agent-context-engineering.md)
